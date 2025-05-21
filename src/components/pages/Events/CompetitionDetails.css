@@ -1,0 +1,105 @@
+/* Main Container */
+.competition-details {
+  padding: 3rem 2rem;
+  background: #0d0d0d; /* Deep black background */
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Heading */
+.competition-details h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #ff6a00;
+  text-shadow: 0 0 15px rgba(255, 106, 0, 0.7);
+  text-align: center;
+  letter-spacing: 1.5px;
+  animation: glowPulse 2s infinite alternate;
+}
+
+/* Paragraph */
+.competition-details p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  color: #eaeaea;
+}
+
+/* Links */
+.competition-details a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ff6a00;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ff6a00;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(255, 106, 0, 0.1);
+}
+
+.competition-details a:hover {
+  color: #000;
+  background: #ff6a00;
+  box-shadow: 0 0 12px #ff6a00;
+  transform: translateY(-2px);
+}
+
+/* Image Styling */
+.competition-details img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(255, 106, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.competition-details img:hover {
+  transform: scale(1.03);
+}
+
+/* Flex Layout */
+.competition-details > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* Sections */
+.competition-details > div > div {
+  flex: 1 1 400px;
+  padding: 1rem;
+  background: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.competition-details > div > div:hover {
+  box-shadow: 0 0 25px rgba(255, 106, 0, 0.4);
+  transform: scale(1.02);
+}
+
+/* Futuristic Glow Animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 106, 0, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 106, 0, 0.8);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .competition-details > div {
+    flex-direction: column;
+  }
+
+  .competition-details h2 {
+    font-size: 2.2rem;
+  }
+}
