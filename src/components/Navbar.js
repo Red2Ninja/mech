@@ -16,12 +16,12 @@ function Navbar() {
                 
                 {/* Left ASME Logo */}
                 <Link to="/" className="navbar-logo left-logo">
-                    <img src="/images/logo_bw.jpeg" alt="ASME Logo" className="logo-img" />
+                    <img src="./images/logo_bw.jpeg" alt="ASME Logo" className="logo-img" />
                 </Link>
 
                 {/* Center Mechnovate Logo */}
                 <div className="center-logo">
-                    <img src="/images/mechnovate_img.jpg" alt="Mechnovate Logo" className="logo-img-large" />
+                    <img src="./images/mechnovate_img.jpg" alt="Mechnovate Logo" className="logo-img-large" />
                 </div>
 
                 {/* Right-side Menu */}

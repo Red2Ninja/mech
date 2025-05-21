@@ -15,7 +15,7 @@ function CompetitionsList() {
       <ul>
         {competitions.map((comp) => (
           <li key={comp.id}>
-            <Link to={`/Events/Competitions/${comp.id}`}>{comp.title}</Link>
+            <Link to={`./Events/Competitions/${comp.id}`}>{comp.title}</Link>
 
           </li>
         ))}

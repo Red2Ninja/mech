@@ -12,7 +12,7 @@ const teamMembers = [
     name: 'Dr. VS Kanchana Bhaskaran',
     position: 'Vice Chancellor, VIT',
     bio: 'Co-Patron',
-    image: '/images/team/kanchana_bhaskaran.jpg',
+    image: './images/team/kanchana_bhaskaran.jpg',
   },
   {
     name: 'Dr. Paratha Sarathi Mallick',
