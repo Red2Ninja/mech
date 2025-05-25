@@ -3,28 +3,37 @@ import { useParams } from 'react-router-dom';
 import './CompetitionDetails.css';
 
 const competitionData = {
-  'design-sprint': {
+  'Aerodash_2.0': {
     image: '/images/event/image1.png', 
     pdf: '/docs/web_mini_project.pdf', 
     details: [
-      'A fast-paced UX/UI design challenge to innovate under pressure.',
+      'AeroDash 2.0 is a national-level aeromodelling competition that challenges teams to design, present, and fly innovative aircraft in Regular and Micro classes. Spanning three days, the event features technical presentations, rigorous inspections, and competitive flight rounds, culminating in a grand awards ceremony. With expert pilots, industry-level judging, and a focus on engineering excellence, AeroDash 2.0 offers participants a platform to showcase aeronautical ingenuity and teamwork in a dynamic, real-world competitive environment.',
       'Team Size: 4-5 members',
       'Registration Fee: 300 Rs',
     ],
     form: 'https://docs.google.com/forms/d/1nZ2XMWoFQBrENMXrsOt8NollGos862EcaXjhLpxBoGs/edit',
     payment: 'https://paymentgateway.com/design-sprint',
   },
-  'code-mania': {
+  'MarinaX': {
     image: 'images/code.jpeg',
     pdf: '/pdfs/code-mania-rules.pdf',
-    details: 'Competitive coding with mind-bending problems.',
+    details: [
+      'An Autonomous Underwater Vehicle (AUV) competition designed to challenge teams in mission-based tasks such as precise navigation, object detection, and retrieval. Over the course of two days, participants will demonstrate their technical expertise and innovative approaches in underwater robotics. This event provides a platform for practical application of engineering principles, encouraging creativity and problem-solving in a competitive yet collaborative environment. Teams will be evaluated on performance, efficiency, and design excellence throughout the competition.',
+      'Team Size: 4-5 members',
+      'Registration Fee: 300 Rs',
+    ],
+    
     form: 'https://forms.gle/code-mania-form',
     payment: 'https://paymentgateway.com/code-mania',
   },
-  'circuit-crunch': {
+  'Mechnovate_Drone_Racing_Challenge_(MDRC)': {
     image: 'images/circuit.jpeg',
     pdf: '/pdfs/circuit-crunch-rules.pdf',
-    details: 'Hardware-level challenge for the electronics wizards.',
+    details: [
+      'The Mechnovate Drone Racing Challenge, a two-day competition invites collegiate teams to showcase their self-built drones in a multi-stage contest. Participants will undergo technical inspection, deliver presentations, and compete in dynamic racing rounds featuring challenging obstacle courses. Judged on design, innovation, and piloting skills, MDRC aims to foster creativity, teamwork, and engineering excellence within the drone racing community.',
+      'Team Size: 4-5 members',
+      'Registration Fee: 300 Rs',
+    ],
     form: 'https://forms.gle/circuit-crunch-form',
     payment: 'https://paymentgateway.com/circuit-crunch',
   },

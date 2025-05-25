@@ -1,5 +1,5 @@
 /* Container Styling */
-.competitions-list {
+.workshops-list {
   padding: 3rem 2rem;
   min-height: 100vh;
   color: #fff;
@@ -7,7 +7,7 @@
 }
 
 /* Title */
-.competitions-list h2 {
+.workshops-list h2 {
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
   color: #FD6821;
@@ -16,7 +16,7 @@
 }
 
 /* Grid Layout */
-.competitions-list ul {
+.workshops-list ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -26,7 +26,7 @@
 }
 
 /* Card Style */
-.competitions-list li {
+.workshops-list li {
   width: 260px;
   height: 320px;
   background: #1a1a1a;
@@ -41,13 +41,13 @@
 }
 
 /* Hover Effects */
-.competitions-list li:hover {
+.workshops-list li:hover {
   transform: scale(1.05) rotate(-1deg);
   box-shadow: 0 0 25px rgba(255, 94, 0, 0.4);
 }
 
 /* Swipe Effect */
-.competitions-list li::before {
+.workshops-list li::before {
   content: '';
   position: absolute;
   top: -100%;
@@ -65,21 +65,22 @@
   z-index: 1;
 }
 
-.competitions-list li:hover::before {
+.workshops-list li:hover::before {
   top: 100%;
   left: 100%;
 }
 
 /* Image Styling */
-.competitions-list li img {
+.workshops-list li img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 /* Text link Styling */
-.competitions-list a {
+.workshops-list a {
   position: relative;
   z-index: 1;
   display: flex;
@@ -99,7 +100,7 @@
   transition: color 0.3s ease;
 }
 
-.competitions-list a::before {
+.workshops-list a::before {
   content: '';
   position: absolute;
   top: -100%;
@@ -117,10 +118,11 @@
   z-index: -1;
 }
 
-.competitions-list a:hover::before {
+.workshops-list a:hover::before {
   top: 100%;
   left: 100%;
 }
-.competitions-list a:hover {
+
+.workshops-list a:hover {
   color: #ffffff;
 }

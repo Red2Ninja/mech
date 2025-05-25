@@ -1,14 +1,13 @@
 /* Main Container */
-.competition-details {
+.workshop-details {
   padding: 3rem 2rem;
-  
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
 }
 
 /* Heading */
-.competition-details h2 {
+.workshop-details h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   color: #FD6821;
@@ -19,7 +18,7 @@
 }
 
 /* Paragraph */
-.competition-details p {
+.workshop-details p {
   font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -27,7 +26,7 @@
 }
 
 /* Links */
-.competition-details a {
+.workshop-details a {
   display: inline-block;
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -41,7 +40,7 @@
   background: rgba(255, 106, 0, 0.1);
 }
 
-.competition-details a:hover {
+.workshop-details a:hover {
   color: #000;
   background: #FD6821;
   box-shadow: 0 0 12px #ff6a00;
@@ -49,19 +48,19 @@
 }
 
 /* Image Styling */
-.competition-details img {
+.workshop-details img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(255, 106, 0, 0.2);
   transition: transform 0.4s ease;
 }
 
-.competition-details img:hover {
+.workshop-details img:hover {
   transform: scale(1.03);
 }
 
 /* Flex Layout */
-.competition-details > div {
+.workshop-details > div {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
@@ -69,7 +68,7 @@
 }
 
 /* Sections */
-.competition-details > div > div {
+.workshop-details > div > div {
   flex: 1 1 400px;
   padding: 1rem;
   background: #1a1a1a;
@@ -78,7 +77,7 @@
   transition: all 0.4s ease;
 }
 
-.competition-details > div > div:hover {
+.workshop-details > div > div:hover {
   box-shadow: 0 0 25px rgba(255, 106, 0, 0.4);
   transform: scale(1.02);
 }
@@ -95,11 +94,11 @@
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
-  .competition-details > div {
+  .workshop-details > div {
     flex-direction: column;
   }
 
-  .competition-details h2 {
+  .workshop-details h2 {
     font-size: 2.2rem;
   }
 }

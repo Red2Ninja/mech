@@ -9,6 +9,8 @@ import CompetitionDetails from './components/pages/Events/CompetitionDetails';
 /*import Mascot from './components/Mascot';*/
 import './App.css';
 import Location from './components/pages/Location';
+import WorkshopList from './components/pages/Events/WorkshopList'; // renamed from CompetitionsList
+import WorkshopDetails from './components/pages/Events/WorkshopDetails';
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
       <Route path = '/Location' exact element={<Location />} />
       <Route path='/Events/Competitions' element={<CompetitionsList />} />
           <Route path='/Events/Competitions/:id' element={<CompetitionDetails />} />
+       <Route path='/Events/Workshops' element={<WorkshopList />} />
+          <Route path='/Events/Workshops/:id' element={<WorkshopDetails />} />
+          
       </Routes>
         </Router>
     </div>
