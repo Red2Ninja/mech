@@ -24,7 +24,7 @@ const competitions = [
 function CompetitionsList() {
   return (
     <div className="competitions-list">
-      <h2>All Competitions</h2>
+      <h2>All Competition</h2>
       <ul>
         {competitions.map((comp) => (
           <li key={comp.id}>
