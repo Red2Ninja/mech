@@ -19,6 +19,9 @@ function Location() {
         ></iframe>
       </div>
         <p className='card-content audiowide-regular'>
+          VIT Vellore is located in Vellore, Tamil Nadu, India. It is accessible by road, rail, and air. The nearest airport is Chennai International Airport, which is approximately 130 km away from the campus. Other nearby airports include Bengaluru International Airport and Tirupati Airport. The nearest railway station is Katpadi Junction, which is approximately 3 km away from the campus. The campus is well connected by road, with frequent bus services available from nearby cities like Chennai, Bengaluru, and Hyderabad.
+
+
 
           <br/>
           <br/>
