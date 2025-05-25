@@ -110,6 +110,9 @@
   .right-nav {
     flex-direction: column;
   }
+  .center-logo{
+    display: none;
+  }
 }
 
 .audiowide-regular {
