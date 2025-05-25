@@ -26,7 +26,7 @@ const competitionData = {
     form: 'https://forms.gle/code-mania-form',
     payment: 'https://paymentgateway.com/code-mania',
   },
-  'Mechnovate_Drone_Racing_Challenge_(MDRC)': {
+  'Mechnovate Drone Racing Challenge (MDRC)': {
     image: 'images/circuit.jpeg',
     pdf: '/pdfs/circuit-crunch-rules.pdf',
     details: [

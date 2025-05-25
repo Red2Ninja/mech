@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import './WorkshopDetails.css';
 
 const workshopData = {
-  'Orbitron-A_cansat_Workshop': {
+  'Orbitron_A_cansat_Workshop': {
+    title: 'Orbitron-A Cansat Workshop',
     image: '/images/event/image1.png', 
     pdf: '/docs/web_mini_project.pdf', 
     details: [
@@ -15,7 +16,8 @@ const workshopData = {
     payment: 'https://paymentgateway.com/design-sprint',
   },
   'HoverX': {
-    image: 'images/code.jpeg',
+    title: 'HoverX',
+    image: '/images/code.jpeg',
     pdf: '/pdfs/code-mania-rules.pdf',
     details: [
       'HoverX is a one-day hands-on workshop focused on the design and fabrication of functional hovercrafts. Participants work in teams to understand the principles of aerodynamics, propulsion, and stability through practical application. The session fosters innovation, teamwork, and technical creativity as students bring their prototypes to life. By the end of the workshop, each group would have constructed and tested a working hovercraft, gaining valuable experience in fabrication techniques and applied engineering problem-solving.',
@@ -29,30 +31,41 @@ const workshopData = {
 
 function WorkshopDetails() {
   const { id } = useParams();
-  const comp = workshopData[id];
+  
+  // Debug: Log the ID to see what we're receiving
+  console.log('Workshop ID from params:', id);
+  console.log('Available workshop keys:', Object.keys(workshopData));
+  
+  const workshop = workshopData[id];
 
-  if (!comp) {
-    return <div className="workshop-details">Workshop not found</div>;
+  if (!workshop) {
+    return (
+      <div className="workshop-details">
+        <h2>Workshop not found</h2>
+        <p>Workshop ID: {id}</p>
+        <p>Available workshops: {Object.keys(workshopData).join(', ')}</p>
+      </div>
+    );
   }
 
   return (
     <div className="workshop-details">
       <div>
         <div>
-          <h2>{id.replace('-', ' ').toUpperCase()}</h2>
-          {Array.isArray(comp.details) ? (
-            comp.details.map((item, index) => (
+          <h2>{workshop.title}</h2>
+          {Array.isArray(workshop.details) ? (
+            workshop.details.map((item, index) => (
               <p key={index}>{item}</p>
             ))
           ) : (
-            <p>{comp.details}</p>
+            <p>{workshop.details}</p>
           )}
-          <a href={comp.pdf} target="_blank" rel="noopener noreferrer">📄 View Rules (PDF)</a><br />
-          <a href={comp.form} target="_blank" rel="noopener noreferrer">📝 Register via Google Form</a><br />
-          <a href={comp.payment} target="_blank" rel="noopener noreferrer">💳 Pay Entry Fee</a>
+          <a href={workshop.pdf} target="_blank" rel="noopener noreferrer">📄 View Rules (PDF)</a><br />
+          <a href={workshop.form} target="_blank" rel="noopener noreferrer">📝 Register via Google Form</a><br />
+          <a href={workshop.payment} target="_blank" rel="noopener noreferrer">💳 Pay Entry Fee</a>
         </div>
         <div>
-          <img src={comp.image} alt={id} />
+          <img src={workshop.image} alt={workshop.title} />
         </div>
       </div>
     </div>

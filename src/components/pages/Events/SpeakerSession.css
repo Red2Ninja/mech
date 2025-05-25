@@ -3,7 +3,8 @@
   font-family: Space;
   src: url(../../../assets/fonts/spyagencybold.ttf);
 }
-.workshop-details {
+
+.speaker-details {
   padding: 3rem 2rem;
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
@@ -11,7 +12,7 @@
 }
 
 /* Heading */
-.workshop-details h2 {
+.session-text h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   color: #FD6821;
@@ -23,7 +24,7 @@
 }
 
 /* Paragraph */
-.workshop-details p {
+.session-text p {
   font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -31,7 +32,7 @@
 }
 
 /* Links */
-.workshop-details a {
+.session-text a {
   display: inline-block;
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -45,7 +46,7 @@
   background: rgba(255, 106, 0, 0.1);
 }
 
-.workshop-details a:hover {
+.session-text a:hover {
   color: #000;
   background: #FD6821;
   box-shadow: 0 0 12px #ff6a00;
@@ -53,19 +54,19 @@
 }
 
 /* Image Styling */
-.workshop-details img {
+.session-image img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(255, 106, 0, 0.2);
   transition: transform 0.4s ease;
 }
 
-.workshop-details img:hover {
+.session-image img:hover {
   transform: scale(1.03);
 }
 
 /* Flex Layout */
-.workshop-details > div {
+.session-container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
@@ -73,7 +74,7 @@
 }
 
 /* Sections */
-.workshop-details > div > div {
+.session-card {
   flex: 1 1 400px;
   padding: 1rem;
   background: #1a1a1a;
@@ -82,7 +83,7 @@
   transition: all 0.4s ease;
 }
 
-.workshop-details > div > div:hover {
+.session-card:hover {
   box-shadow: 0 0 25px rgba(255, 106, 0, 0.4);
   transform: scale(1.02);
 }
@@ -99,11 +100,11 @@
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
-  .workshop-details > div {
+  .session-container {
     flex-direction: column;
   }
 
-  .workshop-details h2 {
+  .session-text h2 {
     font-size: 2.2rem;
   }
 }

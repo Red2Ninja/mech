@@ -15,14 +15,14 @@ function Carditems() {
           <div className="event-title ">COMPETITION</div>
         </div>
         
-        <div className="event-card" onClick={() => navigate('/Events/Competitions')}>
+        <div className="event-card" onClick={() => navigate('/Events/Workshops')}>
           <img src="/images/workshop.png" alt="Workshop" className="event-img" />
           <div className="event-title ">WORKSHOP</div>
         </div>
         
-        <div className="event-card " onClick={() => navigate('/Events/Competitions')}>
+        <div className="event-card " onClick={() => navigate('/Events/Speakers')}>
           <img src="/images/speaker2.png" alt="Speaker session" className="event-img" />
-          <div className="event-title ">SPEAKER SESSIONS</div>
+          <div className="event-title ">KEYNOTE SESSIONS</div>
         </div>
     </div>
 </section>

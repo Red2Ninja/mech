@@ -11,6 +11,7 @@ import './App.css';
 import Location from './components/pages/Location';
 import WorkshopList from './components/pages/Events/WorkshopList'; // renamed from CompetitionsList
 import WorkshopDetails from './components/pages/Events/WorkshopDetails';
+import SpeakerSession from './components/pages/Events/Speaker';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/Events/Competitions/:id' element={<CompetitionDetails />} />
        <Route path='/Events/Workshops' element={<WorkshopList />} />
           <Route path='/Events/Workshops/:id' element={<WorkshopDetails />} />
+          <Route path='/Events/Speakers' element={<SpeakerSession />} />
           
       </Routes>
         </Router>

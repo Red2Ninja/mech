@@ -1,4 +1,8 @@
 /* Container Styling */
+@font-face {
+  font-family: Space;
+  src: url(../../../assets/fonts/spyagencybold.ttf);
+}
 .workshops-list {
   padding: 3rem 2rem;
   min-height: 100vh;
@@ -13,6 +17,7 @@
   color: #FD6821;
   text-shadow: 0 0 10px #ff9452;
   text-align: center;
+  font-family: Space;
 }
 
 /* Grid Layout */

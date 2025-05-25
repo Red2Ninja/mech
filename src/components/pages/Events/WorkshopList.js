@@ -5,7 +5,7 @@ import './WorkshopDetails.css';
 
 const workshops = [
   {
-    id: 'Orbitron-A_cansat_Workshop',
+    id: 'Orbitron_A_cansat_Workshop',
     title: 'Orbitron-A cansat Workshop',
     image: '/images/bg.jpg'
   },

@@ -15,7 +15,7 @@ const competitions = [
     image: '/images/gears.jpeg'
   },
   {
-    id: 'Mechnovate_Drone_Racing_Challenge_(MDRC)',
+    id: 'Mechnovate Drone Racing Challenge (MDRC)',
     title: 'Mechnovate Drone Racing Challenge (MDRC)',
     image: '/images/mdrc.jpg'
   },

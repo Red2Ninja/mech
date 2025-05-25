@@ -1,9 +1,13 @@
 /* Container Styling */
+@font-face {
+  font-family: Space;
+  src: url(../../../assets/fonts/spyagencybold.ttf);
+}
 .competitions-list {
   padding: 3rem 2rem;
   min-height: 100vh;
   color: #fff;
-  font-family: 'Segoe UI', sans-serif;
+  
 }
 
 /* Title */
@@ -11,8 +15,9 @@
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
   color: #FD6821;
-  text-shadow: 0 0 10px #ff9452;
+  text-shadow: 0 0 8px #ff9452;
   text-align: center;
+  font-family: Space;
 }
 
 /* Grid Layout */
