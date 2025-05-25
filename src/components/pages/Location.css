@@ -3,6 +3,10 @@
   font-family: Space;
   src: url(../../assets/fonts/spyagencybold.ttf);
 }
+@font-face {
+  font-family: poppins;
+  src: url(../../assets/fonts/poppins.ttf);
+}
 .location-container {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,7 @@
   text-align: justify;
   hyphens: auto;
   word-wrap: break-word;
+  font-family: poppins;
 }
 
 .location-text h2 {
@@ -54,6 +59,7 @@
   text-align: justify;
   color: #e0e0e0;
   overflow: hidden;
+  font-family: poppins;
 }
 
 .location-text ul {
@@ -62,6 +68,7 @@
   padding-left: clamp(1rem, 2vw, 1.5rem);
   list-style-type: none;
   position: relative;
+  font-family: poppins;
 }
 
 .location-text li {
@@ -69,6 +76,7 @@
   position: relative;
   padding-left: clamp(1rem, 2vw, 1.5rem);
   transition: all 0.3s ease;
+  font-family: poppins;
 }
 
 .location-text li::before {
