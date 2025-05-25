@@ -1,8 +1,13 @@
+@font-face {
+  font-family: Square;
+  src: url(../assets/fonts/Square.ttf);
+  
+}
 .navbar {
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);         
-  -webkit-backdrop-filter: blur(10px); 
+  background-color: transparent;
+ /* backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +27,8 @@
 }
 
 .left-logo img {
-  height: 60px;
+  margin-top: 10px;
+  height: 120px;
 }
 
 .center-logo {
@@ -32,7 +38,8 @@
 }
 
 .center-logo img {
-  height: 80px; /* adjust as needed */
+  margin-top: 10px;
+  height: 220px; /* adjust as needed */
   object-fit: contain;
 }
 
@@ -45,8 +52,9 @@
 .menu-icon {
   display: none;
   cursor: pointer;
-  color: orange;
+  color: #ff9452;
   font-size: 24px;
+
 }
 
 /* Desktop nav */
@@ -57,10 +65,12 @@
 }
 
 .nav-item .nav-links {
-  color: orange;
+  color: #ff9452;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;
+  font-family: Square;
+
 }
 
 .nav-item .nav-links:hover {
@@ -100,4 +110,10 @@
   .right-nav {
     flex-direction: column;
   }
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

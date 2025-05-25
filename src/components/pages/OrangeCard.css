@@ -1,45 +1,231 @@
 /* OrangeCard.css */
-body{
-  background-color: black;
+@font-face {
+  font-family: Space;
+  src: url(../../assets/fonts/spyagencybold.ttf);
 }
-.orange-card-container {
+@font-face {
+  font-family: Square;
+  src: url(../../assets/fonts/Square.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/fonts/poppins.ttf);
+}
+body {
+  
+  
+}
+
+/* Grid overlay effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 148, 82, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 148, 82, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cards-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
 }
-h1{
-  padding-top: 30px;
-  text-align: center;
+
+h1 {
   font-size: 2.8rem;
-  margin-bottom: 2.5rem;
-  color: orange;
-  text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+  color: #ff9452;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #ff9452;
+  font-family: Space;
+  text-align: center;
 }
 
 .orange-card {
-  border: 3px solid orange;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 800px;
-  background-color: #1e1e1e;
-  color: white;
-  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.4);
-  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 2px solid #ff9452;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1300px;
+  width: 100%;
+  background: rgba(10, 20, 40, 0.9);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  box-shadow: 
+    0 8px 32px rgba(255, 148, 82, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Removed corner glow effects */
+
 .orange-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 16px 48px rgba(255, 148, 82, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 0 60px rgba(255, 148, 82, 0.3);
+  border-color: #ffb380;
+}
+
+/* Second card - Reverse layout (Text left, Image right) */
+.orange-card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.orange-card:nth-child(2) .card-content-section {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.orange-card:nth-child(2) .card-title {
+  text-align: left;
+}
+
+.orange-card:nth-child(2) .card-content {
+  text-align: left;
+}
+
+/* Mascot section - Left side */
+.card-mascot {
+  flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mascot-icon {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(255, 148, 82, 0.4));
+  transition: all 0.4s ease;
+}
+
+.orange-card:hover .mascot-icon {
+  filter: drop-shadow(0 0 30px rgba(255, 148, 82, 0.6));
+  transform: scale(1.05);
+}
+
+/* Content section - Right side */
+.card-content-section {
+  flex: 1;
+  text-align: right;
+  padding-left: 20px;
+  font-family: Poppins;
 }
 
 .card-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: orange;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff9452;
+  background-clip: text;
+  letter-spacing: 2px;
+  filter: drop-shadow(0 0 10px rgba(255, 148, 82, 0.5));
+  text-align: right;
+  
 }
 
 .card-content {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  text-align: right;
+  margin: 0;
+  font-family: Poppins;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .orange-card,
+  .orange-card:nth-child(2) {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .card-content-section,
+  .orange-card:nth-child(2) .card-content-section {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .card-title,
+  .orange-card:nth-child(2) .card-title {
+    text-align: center;
+  }
+  
+  .card-content,
+  .orange-card:nth-child(2) .card-content {
+    text-align: center;
+  }
+  
+  .card-mascot {
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+  
+  .orange-card {
+    padding: 25px;
+    margin: 0 10px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+  }
+  
+  .card-content {
+    font-size: 16px;
+  }
+  
+  .mascot-icon {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-btn {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mascot-icon {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .orange-card {
+    padding: 20px;
+  }
 }

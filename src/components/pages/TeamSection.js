@@ -12,7 +12,7 @@ const teamMembers = [
     name: 'Dr. VS Kanchana Bhaskaran',
     position: 'Vice Chancellor, VIT',
     bio: 'Co-Patron',
-    image: './images/team/kanchana_bhaskaran.jpg',
+    image: '/images/team/kanchana_bhaskaran.jpg',
   },
   {
     name: 'Dr. Paratha Sarathi Mallick',
@@ -67,14 +67,14 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <section className="team-section">
-      <h2>Meet Our Team</h2>
+      <h2 className='card-title stick-no-bills'> Meet Our Team</h2>
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-card">
             <div className="team-img-wrap">
               <img src={member.image} alt={member.name} className="team-img" />
             </div>
-            <div className="team-info">
+            <div className="team-info ">
               <h4>{member.name}</h4>
               <p className="team-position">{member.position}</p>
               {member.bio && <p className="team-bio">{member.bio}</p>}

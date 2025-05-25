@@ -1,0 +1,49 @@
+/* Alternative solution that uses direct import in index.css */
+/*body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("./assets/space2.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+    
+
+}*/
+/* Remove static background, let the dynamic one handle it */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #0a0a2e; /* Fallback color */
+  overflow-x: hidden;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure all content has proper z-index */
+.main-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Optional: Add backdrop blur to cards throughout site */
+.space-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 148, 82, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.space-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 148, 82, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}

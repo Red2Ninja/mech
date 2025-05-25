@@ -1,9 +1,9 @@
 .footer {
-  background: linear-gradient(135deg, #1a1a1a 0%, #9e5018 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #ff9452 100%);
 
   padding: 2rem;
   color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-inner {
@@ -63,3 +63,4 @@
   padding-top: 1rem;
   font-size: 0.9rem;
 }
+

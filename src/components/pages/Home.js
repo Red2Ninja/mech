@@ -1,11 +1,12 @@
 import React from 'react'
 import HeroSection from '../HeroSection'
 import Cards from './Cards'
-import OrangeCard from './About'
-import AboutSection from './AboutSection'
+
+import AboutSection from './About'
 import Footer from './Footer'
 import TeamSection from './TeamSection'
 import Location from './Location'
+import GallerySection from './GallerySection'
 
 
 function Home() {
@@ -14,8 +15,8 @@ function Home() {
         <HeroSection />
         <AboutSection />
         <Cards />
-        <Location />
         
+        <GallerySection />
         <TeamSection />
         
 

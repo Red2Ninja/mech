@@ -5,8 +5,8 @@ function Location() {
   return (
     <div className="location-container">
       <div className="location-text">
-        <h2>How to reach <span>VIT?</span></h2>
-        <p>
+        <h2 className='stalinist-one-regular'>How to reach <span>VIT?</span></h2>
+        <p className='card-content audiowide-regular'>
           VIT Vellore is located in Vellore, Tamil Nadu, India. It is accessible by road, rail, and air.
           The nearest airport is Chennai International Airport, which is approximately 130 km away from the campus.
           Other nearby airports include Bengaluru International Airport and Tirupati Airport.

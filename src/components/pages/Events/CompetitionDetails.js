@@ -15,14 +15,14 @@ const competitionData = {
     payment: 'https://paymentgateway.com/design-sprint',
   },
   'code-mania': {
-    image: '/images/code.jpeg',
+    image: 'images/code.jpeg',
     pdf: '/pdfs/code-mania-rules.pdf',
     details: 'Competitive coding with mind-bending problems.',
     form: 'https://forms.gle/code-mania-form',
     payment: 'https://paymentgateway.com/code-mania',
   },
   'circuit-crunch': {
-    image: '/images/circuit.jpeg',
+    image: 'images/circuit.jpeg',
     pdf: '/pdfs/circuit-crunch-rules.pdf',
     details: 'Hardware-level challenge for the electronics wizards.',
     form: 'https://forms.gle/circuit-crunch-form',
