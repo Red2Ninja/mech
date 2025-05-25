@@ -52,7 +52,7 @@
 .menu-icon {
   display: none;
   cursor: pointer;
-  color: #ff9452;
+  color: #FD6821;
   font-size: 24px;
 
 }
@@ -65,7 +65,7 @@
 }
 
 .nav-item .nav-links {
-  color: #ff9452;
+  color: #FD6821;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;

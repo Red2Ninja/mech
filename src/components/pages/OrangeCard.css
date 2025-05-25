@@ -1,4 +1,3 @@
-/* OrangeCard.css */
 @font-face {
   font-family: Space;
   src: url(../../assets/fonts/spyagencybold.ttf);
@@ -11,9 +10,14 @@
   font-family: Poppins;
   src: url(../../assets/fonts/poppins.ttf);
 }
+
+/* General */
 body {
-  
-  
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+  background-color: #0a1428;
+  min-height: 100vh;
 }
 
 /* Grid overlay effect */
@@ -35,32 +39,36 @@ body::before {
 .cards-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: clamp(20px, 5vw, 40px);
   align-items: center;
-  padding: 40px 20px;
+  padding: clamp(15px, 4vw, 40px);
   position: relative;
   z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 2.8rem;
-  color: #ff9452;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px #ff9452;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  color: #FD6821;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(1rem, 3vw, 2rem);
+  text-shadow: 0 0 10px #FD6821;
   font-family: Space;
   text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .orange-card {
   display: flex;
   align-items: center;
-  gap: 40px;
-  border: 2px solid #ff9452;
-  border-radius: 20px;
-  padding: 40px;
+  gap: clamp(15px, 3vw, 40px);
+  border: 2px solid #FD6821;
+  border-radius: 15px;
+  padding: clamp(15px, 4vw, 40px);
   max-width: 1300px;
-  width: 100%;
+  width: calc(100% - 20px);
   background: rgba(10, 20, 40, 0.9);
   backdrop-filter: blur(10px);
   color: #ffffff;
@@ -71,20 +79,18 @@ h1 {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
-/* Removed corner glow effects */
-
 .orange-card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-5px) scale(1.01);
   box-shadow: 
     0 16px 48px rgba(255, 148, 82, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.2),
     0 0 60px rgba(255, 148, 82, 0.3);
-  border-color: #ffb380;
+  border-color: #FD6821;
 }
 
-/* Second card - Reverse layout (Text left, Image right) */
 .orange-card:nth-child(2) {
   flex-direction: row-reverse;
 }
@@ -92,140 +98,177 @@ h1 {
 .orange-card:nth-child(2) .card-content-section {
   text-align: left;
   padding-left: 0;
-  padding-right: 20px;
+  padding-right: clamp(10px, 2vw, 20px);
 }
 
-.orange-card:nth-child(2) .card-title {
-  text-align: left;
-}
-
+.orange-card:nth-child(2) .card-title,
 .orange-card:nth-child(2) .card-content {
   text-align: left;
 }
 
-/* Mascot section - Left side */
+/* Mascot section */
 .card-mascot {
-  flex: 0 0 300px;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  min-width: clamp(120px, 25vw, 300px);
 }
 
 .mascot-icon {
-  width: 250px;
-  height: 250px;
+  width: clamp(120px, 18vw, 250px);
+  height: clamp(120px, 18vw, 250px);
   object-fit: contain;
-  filter: drop-shadow(0 0 20px rgba(255, 148, 82, 0.4));
+  filter: drop-shadow(0 0 15px rgba(255, 148, 82, 0.4));
   transition: all 0.4s ease;
 }
 
 .orange-card:hover .mascot-icon {
-  filter: drop-shadow(0 0 30px rgba(255, 148, 82, 0.6));
-  transform: scale(1.05);
+  filter: drop-shadow(0 0 25px rgba(255, 148, 82, 0.6));
+  transform: scale(1.03);
 }
 
-/* Content section - Right side */
+/* Content section */
 .card-content-section {
   flex: 1;
   text-align: right;
-  padding-left: 20px;
-  font-family: Poppins;
+  padding-left: clamp(10px, 2vw, 20px);
+  min-width: 0;
 }
 
 .card-title {
-  font-size: 28px;
+  font-size: clamp(18px, 3.5vw, 28px);
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #ff9452;
+  margin-bottom: clamp(10px, 2vw, 20px);
+  color: #FD6821;
   background-clip: text;
-  letter-spacing: 2px;
-  filter: drop-shadow(0 0 10px rgba(255, 148, 82, 0.5));
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 8px rgba(255, 148, 82, 0.5));
   text-align: right;
-  
+  line-height: 1.2;
 }
 
 .card-content {
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.6;
   color: #e0e0e0;
   text-align: right;
   margin: 0;
-  font-family: Poppins;
 }
 
-
-
-/* Responsive design */
-@media (max-width: 1024px) {
+/* Mobile-first responsive design */
+@media (max-width: 900px) {
   .orange-card,
   .orange-card:nth-child(2) {
     flex-direction: column;
+    gap: clamp(15px, 4vw, 25px);
     text-align: center;
-    gap: 30px;
+    padding: clamp(20px, 5vw, 30px);
   }
-  
+
   .card-content-section,
   .orange-card:nth-child(2) .card-content-section {
+    padding: 0;
     text-align: center;
-    padding-left: 0;
-    padding-right: 0;
   }
-  
+
   .card-title,
-  .orange-card:nth-child(2) .card-title {
-    text-align: center;
-  }
-  
   .card-content,
+  .orange-card:nth-child(2) .card-title,
   .orange-card:nth-child(2) .card-content {
     text-align: center;
   }
-  
+
   .card-mascot {
-    flex: none;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .mascot-icon {
+    width: clamp(140px, 30vw, 200px);
+    height: clamp(140px, 30vw, 200px);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .cards-wrapper {
+    padding: clamp(10px, 3vw, 20px);
+    gap: clamp(15px, 4vw, 25px);
+  }
+
   h1 {
-    font-size: 2.5rem;
-    padding-top: 20px;
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    margin-top: clamp(1rem, 3vw, 2rem);
   }
-  
+
   .orange-card {
-    padding: 25px;
-    margin: 0 10px;
+    width: calc(100% - 10px);
+    padding: clamp(15px, 4vw, 25px);
+    border-radius: 12px;
   }
-  
+
   .card-title {
-    font-size: 24px;
+    font-size: clamp(16px, 4vw, 22px);
+    margin-bottom: clamp(8px, 2vw, 15px);
   }
-  
+
   .card-content {
-    font-size: 16px;
+    font-size: clamp(13px, 3vw, 16px);
+    line-height: 1.5;
   }
-  
+
   .mascot-icon {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .about-btn {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-bottom: 20px;
+    width: clamp(120px, 35vw, 180px);
+    height: clamp(120px, 35vw, 180px);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
+  .cards-wrapper {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .orange-card {
+    width: calc(100% - 8px);
+    padding: 15px;
+    margin: 0 4px;
+  }
+
   .mascot-icon {
-    width: 150px;
-    height: 150px;
+    width: clamp(100px, 40vw, 150px);
+    height: clamp(100px, 40vw, 150px);
+  }
+
+  .card-title {
+    font-size: clamp(15px, 5vw, 20px);
+  }
+
+  .card-content {
+    font-size: clamp(12px, 4vw, 15px);
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .cards-wrapper {
+    padding: 15px;
+    gap: 20px;
   }
   
   .orange-card {
     padding: 20px;
+  }
+  
+  .mascot-icon {
+    width: 120px;
+    height: 120px;
   }
 }

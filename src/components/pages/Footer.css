@@ -1,8 +1,10 @@
 .footer {
-  background: linear-gradient(135deg, #1a1a1a 0%, #ff9452 100%);
-
+  background-image: url("../../assets/asme_gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 2rem;
-  color: #000;
+  color: #fbf8f8;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -63,4 +65,6 @@
   padding-top: 1rem;
   font-size: 0.9rem;
 }
+
+
 

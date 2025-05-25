@@ -1,52 +1,308 @@
+/* Location Section Styles */
+@font-face {
+  font-family: Space;
+  src: url(../../assets/fonts/spyagencybold.ttf);
+}
 .location-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 3rem;
-
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: clamp(1rem, 2vw, 2rem);
+  padding: clamp(2rem, 5vw, 4rem);
+  color: #e0e0e0;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  
 }
 
+/* Text Content Section with Newspaper Layout */
 .location-text {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  line-height: 1.7;
+  color: #e0e0e0;
+  box-sizing: border-box;
+  position: relative;
+  text-align: justify;
+  hyphens: auto;
+  word-wrap: break-word;
 }
 
 .location-text h2 {
-
-  padding-top: 30px;
-  text-align: center;
+  
   font-size: 2.8rem;
-  margin-bottom: 2.5rem;
-  color: orange;
-  text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
-  font-family: 'Poppins', sans-serif;
+  color: #FD6821;
+  text-shadow: 0 0 8px #FD6821;
+  font-family: Space;
 }
 
+.location-text h2 span {
+  background: linear-gradient(135deg, #FD6821 0%, #ff6e40 50%, #ffb380 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(255, 148, 82, 0.4));
+}
 
 .location-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color:white;
-  font-family: 'Poppins', sans-serif;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  text-align: justify;
+  color: #e0e0e0;
+  overflow: hidden;
 }
 
+.location-text ul {
+  margin-top: clamp(0.8rem, 2vw, 1.5rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  padding-left: clamp(1rem, 2vw, 1.5rem);
+  list-style-type: none;
+  position: relative;
+}
+
+.location-text li {
+  margin-bottom: clamp(0.4rem, 1vw, 0.8rem);
+  position: relative;
+  padding-left: clamp(1rem, 2vw, 1.5rem);
+  transition: all 0.3s ease;
+}
+
+.location-text li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color:#FD6821;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+
+.location-text li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.location-text li:hover::before {
+  color: #FD6821;
+  transform: scale(1.2);
+}
+
+/* Map Section - Floating Design */
 .location-map {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+  float: right;
+  width: clamp(300px, 45%, 500px);
+  margin: 0 0 clamp(1rem, 2vw, 2rem) clamp(1rem, 2vw, 2rem);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(255, 148, 82, 0.3),
+    0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  position: relative;
+  background: rgba(10, 20, 40, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 148, 82, 0.2);
+  shape-outside: margin-box;
+  shape-margin: clamp(1rem, 2vw, 2rem);
 }
 
-.stalinist-one-regular {
-  font-family: "Stalinist One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.location-map::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #FD6821, #ff6e40, #ffb380, #ff9452);
+  border-radius: 15px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
-.audiowide-regular {
-  font-family: "Audiowide", sans-serif;
+
+.location-map:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 
+    0 16px 48px rgba(255, 148, 82, 0.4),
+    0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.location-map:hover::before {
+  opacity: 0.7;
+}
+
+.location-map iframe {
+  width: 100%;
+  height: clamp(250px, 35vw, 350px);
+  border: none;
+  display: block;
+  transition: all 0.4s ease;
+  filter: grayscale(0.3) contrast(1.1);
+}
+
+.location-map:hover iframe {
+  filter: grayscale(0) contrast(1.2);
+}
+
+/* Font Classes Support */
+.stalinist-one-regular {
+  font-family: 'Stalinist One', cursive;
   font-weight: 400;
-  font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: 'Audiowide', cursive;
+  font-weight: 400;
+}
+
+.card-content {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Clear float after location-text to prevent layout issues */
+.location-text::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1024px) {
+  .location-container {
+    gap: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1.5rem, 4vw, 3rem);
+  }
+  
+  .location-map {
+    width: clamp(280px, 42%, 450px);
+    margin-left: clamp(0.8rem, 1.5vw, 1.5rem);
+    margin-bottom: clamp(0.8rem, 1.5vw, 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .location-container {
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+  
+  .location-map {
+    float: none;
+    width: 100%;
+    margin: clamp(1.5rem, 3vw, 2rem) 0 0 0;
+    shape-outside: none;
+  }
+  
+  .location-text {
+    text-align: left;
+  }
+  
+  .location-map iframe {
+    height: clamp(200px, 50vw, 300px);
+  }
+}
+
+@media (max-width: 600px) {
+  .location-container {
+    padding: clamp(1rem, 3vw, 2rem);
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  
+  .location-text h2 {
+    text-align: center;
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  }
+  
+  .location-text ul {
+    padding-left: clamp(0.8rem, 2vw, 1.2rem);
+  }
+  
+  .location-text li {
+    padding-left: clamp(0.8rem, 2vw, 1.2rem);
+  }
+  
+  .location-map iframe {
+    height: clamp(180px, 45vw, 250px);
+  }
+}
+
+@media (max-width: 400px) {
+  .location-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .location-text {
+    font-size: 0.9rem;
+  }
+  
+  .location-map iframe {
+    height: 200px;
+  }
+  
+  .location-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .location-text li,
+  .location-text li::before,
+  .location-map,
+  .location-map iframe {
+    transition: none;
+  }
+  
+  .location-text li:hover {
+    transform: none;
+  }
+  
+  .location-map:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .location-text {
+    color: #ffffff;
+  }
+  
+  .location-text h2 {
+    color: #ffcc99;
+    text-shadow: none;
+  }
+  
+  .location-map {
+    border: 2px solid #FD6821;
+  }
+}
+
+/* Print styles */
+@media print {
+  .location-map {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+    page-break-inside: avoid;
+  }
+  
+  .location-container {
+    background-color: white;
+    color: black;
+  }
+  
+  .location-text h2 {
+    color: black;
+    text-shadow: none;
+  }
+  
+  .location-text li::before {
+    color: black;
+  }
 }
