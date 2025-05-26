@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './CompetitionDetails.css';
 
 const competitionData = {
-  'Aerodash_2.0': {
+  'Aerodash 2.0': {
     image: '/images/event/image1.png', 
     pdf: '/docs/web_mini_project.pdf', 
     details: [

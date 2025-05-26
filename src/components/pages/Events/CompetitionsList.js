@@ -5,7 +5,7 @@ import './CompetitionDetails.css';
 
 const competitions = [
   {
-    id: 'Aerodash_2.0',
+    id: 'Aerodash 2.0',
     title: 'Aerodash 2.0',
     image: '/images/bg.jpg'
   },
