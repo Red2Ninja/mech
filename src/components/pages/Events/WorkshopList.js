@@ -23,8 +23,12 @@ function WorkshopsList() {
       <ul>
         {workshops.map((workshop) => (
           <li key={workshop.id}>
-            <img src={workshop.image} alt={workshop.title} />
-            <Link to={`/Events/Workshops/${workshop.id}`}>{workshop.title}</Link>
+            <Link to={`/Events/Workshops/${workshop.id}`} className="workshop-card-link">
+              <div className="workshop-card">
+                <img src={workshop.image} alt={workshop.title} />
+                <div className="workshop-title">{workshop.title}</div>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

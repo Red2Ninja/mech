@@ -28,8 +28,12 @@ function CompetitionsList() {
       <ul>
         {competitions.map((comp) => (
           <li key={comp.id}>
-            <img src={comp.image} alt={comp.title} />
-            <Link to={`/Events/Competitions/${comp.id}`}>{comp.title}</Link>
+            <Link to={`/Events/Competitions/${comp.id}`} className="competition-card-link">
+              <div className="competition-card">
+                <img src={comp.image} alt={comp.title} />
+                <div className="competition-title">{comp.title}</div>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>
