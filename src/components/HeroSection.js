@@ -11,7 +11,7 @@ function HeroSection() {
         
         {!videoLoaded && (
           <div className="mascot-loader">
-            <img src="/assets/mascot.gif" alt="Loading..." />
+            <img src="/assets/mascot_hmr.gif" alt="Loading..." />
           </div>
         )}
 
