@@ -7,21 +7,19 @@ function HeroSection() {
 
   return (
     <section id="home">
-      <div className="hero-container">
-        
+      <div className='hero-container'>
         {!videoLoaded && (
           <div className="mascot-loader">
-            <img src="/assets/mascot_hmr.gif" alt="Loading..." />
+            <img src="/assets/Mascot.png" alt="Loading..." />
           </div>
         )}
-
         <video
           src="./videos/final.mp4"
           autoPlay
           loop
           muted
+          className={videoLoaded ? '' : 'hidden'}
           onCanPlayThrough={() => setVideoLoaded(true)}
-          className={videoLoaded ? 'visible' : 'hidden'}
         ></video>
       </div>
     </section>
