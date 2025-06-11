@@ -7,7 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "./GallerySection.css";
 
 const images = [
-  "/images/gallery/gallery16.jpg",
+    "/images/gallery/gallery16.jpg",
   "/images/gallery/gallery1.jpg",
   "/images/gallery/gallery2.jpg",
   "/images/gallery/gallery3.jpg",
@@ -23,7 +23,6 @@ const images = [
   "/images/gallery/gallery13.jpg",
   "/images/gallery/gallery14.jpg",
   "/images/gallery/gallery15.jpg",
-  
   "/images/gallery/gallery17.jpg"
 ];
 
