@@ -79,21 +79,22 @@ function GallerySection() {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <div className={`gallery-img-container ${loadedImages.has(index) ? 'loaded' : ''}`}>
-  {!loadedImages.has(index) && <div className="image-loader"></div>}
-  <img
-    src={src}
-    alt={`Gallery ${index + 1}`}
-    className="gallery-img"
-    loading="lazy"
-    onLoad={() => handleImageLoad(index)}
-    onError={(e) => {
-      e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0xMjUgNzVMMTc1IDEyNUgxNzVMMTI1IDc1WiIgZmlsbD0iI0NDQ0NDQyIvPgo8L3N2Zz4K';
-      handleImageLoad(index);
-    }}
-  />
-</div>
-
+            <div 
+              className={`gallery-img-container ${loadedImages.has(index) ? 'loaded' : ''}`}
+            >
+              <img 
+                src={src} 
+                alt={`Gallery ${index + 1}`} 
+                className="gallery-img"
+                loading="lazy"
+                onLoad={() => handleImageLoad(index)}
+                onError={(e) => {
+                  // Fallback for broken images
+                  e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0xMjUgNzVMMTc1IDEyNUgxNzVMMTI1IDc1WiIgZmlsbD0iI0NDQ0NDQyIvPgo8L3N2Zz4K';
+                  handleImageLoad(index);
+                }}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
