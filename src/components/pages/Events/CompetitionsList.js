@@ -7,17 +7,17 @@ const competitions = [
   {
     id: 'Aerodash 2.0',
     title: 'Aerodash 2.0',
-    image: '/images/bg.jpg'
+    image: '/images/event_logos/aerodash.png'
   },
   {
     id: 'MarinaX',
     title: 'MarinaX',
-    image: '/images/gears.jpeg'
+    image: '/images/event_logos/marinaX.png'
   },
   {
     id: 'Mechnovate Drone Racing Challenge (MDRC)',
     title: 'Mechnovate Drone Racing Challenge (MDRC)',
-    image: '/images/mdrc.jpg'
+    image: '/images/event_logos/mdrc.png'
   },
 ];
 

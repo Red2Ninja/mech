@@ -7,12 +7,12 @@ const workshops = [
   {
     id: 'Orbitron_A_cansat_Workshop',
     title: 'Orbitron-A cansat Workshop',
-    image: '/images/bg.jpg'
+    image: '/images/event_logos/orbitron.png'
   },
   {
     id: 'HoverX',
     title: 'HoverX',
-    image: '/images/gears.jpeg'
+    image: '/images/event_logos/hoverX.png'
   },
 ];
 

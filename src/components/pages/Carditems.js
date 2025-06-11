@@ -26,7 +26,7 @@ function Carditems() {
         </div>
 
         <div className="event-card " onClick={() => navigate('/Events/Mechathon')}>
-          <img src="/images/mechathon_prp.png" alt="Speaker session" className="event-img" />
+          <img src="/images/mechathon4.png" alt="mechathon" className="event-img" />
           <div className="event-title ">MECHATHON 4.0</div>
         </div>
     </div>

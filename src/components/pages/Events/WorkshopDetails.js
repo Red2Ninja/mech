@@ -5,7 +5,7 @@ import './WorkshopDetails.css';
 const workshopData = {
   'Orbitron_A_cansat_Workshop': {
     title: 'Orbitron-A Cansat Workshop',
-    image: '/images/event/image1.png', 
+    image: '/images/event_logos/orbitron', 
     pdf: '/docs/web_mini_project.pdf', 
     details: [
       'Orbitron is a comprehensive two-day workshop focused on the design, assembly, and operation of a miniature can satellite system. Participants will engage in theoretical sessions covering core components and wireless communication, followed by hands-on activities including sensor integration, wireless data transmission, and data logging. The workshop culminates in practical drop tests and data analysis, providing valuable insights into aerospace technology and embedded systems within a collaborative learning environment.',
@@ -17,7 +17,7 @@ const workshopData = {
   },
   'HoverX': {
     title: 'HoverX',
-    image: '/images/code.jpeg',
+    image: '/images/event_logos/hoverX',
     pdf: '/pdfs/code-mania-rules.pdf',
     details: [
       'HoverX is a one-day hands-on workshop focused on the design and fabrication of functional hovercrafts. Participants work in teams to understand the principles of aerodynamics, propulsion, and stability through practical application. The session fosters innovation, teamwork, and technical creativity as students bring their prototypes to life. By the end of the workshop, each group would have constructed and tested a working hovercraft, gaining valuable experience in fabrication techniques and applied engineering problem-solving.',
