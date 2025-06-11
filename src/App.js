@@ -12,6 +12,7 @@ import Location from './components/pages/Location';
 import WorkshopList from './components/pages/Events/WorkshopList'; // renamed from CompetitionsList
 import WorkshopDetails from './components/pages/Events/WorkshopDetails';
 import SpeakerSession from './components/pages/Events/Speaker';
+import Mechathon from './components/pages/Events/Mechathon';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
        <Route path='/Events/Workshops' element={<WorkshopList />} />
           <Route path='/Events/Workshops/:id' element={<WorkshopDetails />} />
           <Route path='/Events/Speakers' element={<SpeakerSession />} />
+          <Route path='/Events/Mechathon' element={<Mechathon />} />
           
       </Routes>
         </Router>

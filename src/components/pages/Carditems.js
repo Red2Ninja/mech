@@ -24,6 +24,11 @@ function Carditems() {
           <img src="/images/speaker2.png" alt="Speaker session" className="event-img" />
           <div className="event-title ">KEYNOTE SESSIONS</div>
         </div>
+
+        <div className="event-card " onClick={() => navigate('/Events/Mechathon')}>
+          <img src="/images/mechathon_prp.png" alt="Speaker session" className="event-img" />
+          <div className="event-title ">MECHATHON 4.0</div>
+        </div>
     </div>
 </section>
 

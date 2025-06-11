@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Space;
+  src: url(../../../assets/fonts/spyagencybold.ttf);
+}
+
+.mechathon-details {
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Heading */
+.session-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #FD6821;
+  text-shadow: 0 0 15px rgba(255, 106, 0, 0.7);
+  text-align: center;
+  letter-spacing: 1.5px;
+  animation: glowPulse 2s infinite alternate;
+  font-family: Space;
+}
+
+/* Paragraph */
+.session-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  color: #eaeaea;
+}
+
+/* Links */
+.session-text a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #FD6821;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #FD6821;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(255, 106, 0, 0.1);
+}
+
+.session-text a:hover {
+  color: #000;
+  background: #FD6821;
+  box-shadow: 0 0 12px #ff6a00;
+  transform: translateY(-2px);
+}
+
+/* Image Styling */
+.session-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(255, 106, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.session-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Flex Layout */
+.session-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* Sections */
+.session-card {
+  flex: 1 1 400px;
+  padding: 1rem;
+  background: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.session-card:hover {
+  box-shadow: 0 0 25px rgba(255, 106, 0, 0.4);
+  transform: scale(1.02);
+}
+
+/* Futuristic Glow Animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 106, 0, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 106, 0, 0.8);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .session-container {
+    flex-direction: column;
+  }
+
+  .session-text h2 {
+    font-size: 2.2rem;
+  }
+}

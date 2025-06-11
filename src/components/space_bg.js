@@ -190,11 +190,18 @@ const SpaceBackground = () => {
     // Animation loop
     const animate = () => {
       // Create space gradient background
-      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      {/*const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
       gradient.addColorStop(0, '#0a0a2e');
       gradient.addColorStop(0.3, '#16213e');
       gradient.addColorStop(0.7, '#0f1419');
-      gradient.addColorStop(1, '#000000');
+      gradient.addColorStop(1, '#000000');*/}
+
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+gradient.addColorStop(0, '#020314');        // near black with hint of blue
+gradient.addColorStop(0.3, '#050822');      // deeper navy blue
+gradient.addColorStop(0.7, '#0a0f2a');      // dark midnight blue
+gradient.addColorStop(1, '#000000');        // pure black
+
       
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);

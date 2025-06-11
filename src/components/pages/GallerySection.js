@@ -7,10 +7,23 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "./GallerySection.css"; // Optional: for styling
 
 const images = [
-  "/images/gears.jpeg",
-  "/images/Asme_bg.png",
-  "/images/gears2.jpeg",
-  "/images/robo.jpng",
+  "/images/gallery/gallery1.jpg",
+  "/images/gallery/gallery2.jpg",
+  "/images/gallery/gallery3.jpg",
+  "/images/gallery/gallery4.jpg",
+  "/images/gallery/gallery5.jpg",
+  "/images/gallery/gallery6.jpg",
+  "/images/gallery/gallery7.jpg",
+  "/images/gallery/gallery8.jpg",
+  "/images/gallery/gallery9.jpg",
+  "/images/gallery/gallery10.jpg",
+  "/images/gallery/gallery11.jpg",
+  "/images/gallery/gallery12.jpg",
+  "/images/gallery/gallery13.jpg",
+  "/images/gallery/gallery14.jpg",
+  "/images/gallery/gallery15.jpg",
+  "/images/gallery/gallery16.jpg",
+  "/images/gallery/gallery17.jpg"
 ];
 
 function GallerySection() {

@@ -35,19 +35,19 @@ function Footer() {
           <h3>Contact Us</h3>
           <div className="contact-info">
             <div className="contact-item">
-              <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" />
+              
               <span>asme@vit.ac.in</span>
             </div>
             <div className="contact-item">
-              <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" />
+              
               <span>official.mechnovate@gmail.com</span>
             </div>
             <div className="contact-item">
-              <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone" />
+              
               <span>+91 9372946497</span>
             </div>
             <div className="contact-item">
-              <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" />
+              
               <span>VIT, Vellore, Tamil Nadu, India</span>
             </div>
           </div>
