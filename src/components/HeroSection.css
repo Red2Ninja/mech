@@ -1,15 +1,14 @@
-video{
+video {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    position : absolute;
+    position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
 }
 
 .hero-container {
-    /*background: url('../public/images/bg.jpg') centre center/cover no-repeat;*/
     height: 100vh;
     width: 100%;
     display: flex;
@@ -21,7 +20,39 @@ video{
     position: relative;
 }
 
-.hero-container > h1{
+/* Hide video initially if not loaded */
+video.hidden {
+    display: none;
+}
+
+/* Mascot Loader Styling */
+.mascot-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Optional: Black background while loading */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mascot-loader img {
+    width: 150px;
+    height: auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Optional floating animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.hero-container > h1 {
     color: white;
     font-size: 100px;
     margin-top: -100px;
@@ -33,6 +64,4 @@ video{
     color: white;
     font-size: 32px;
     font-family: 'Poppins', sans-serif;
-
-
 }
