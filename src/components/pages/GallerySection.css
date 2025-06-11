@@ -97,6 +97,31 @@
 }
 
 /* Uniform responsive breakpoints */
+@media (max-width: 1200px) {
+  .gallery-img-container {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-img-container {
+    height: 240px;
+  }
+  
+  
+  
+  .gallery-section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-img-container {
+    height: 220px;
+  }
+  
+  
+}
 
 /* Optional: Loading state for uniform experience */
 .gallery-img-container::before {
