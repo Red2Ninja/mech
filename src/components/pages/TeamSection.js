@@ -44,24 +44,7 @@ const teamMembers = [
     bio: 'Co-Convenor',
     image: '/images/team/joel.png',
   },
-  {
-    name: 'Juee Patil',
-    position: 'Chairperson',
-    bio: 'ASME-VIT',
-    image: '/images/team/Zuiii.jpg',
-  },
-  {
-    name: 'Vishal Singh',
-    position: 'Secretary',
-    bio: 'ASME-VIT',
-    image: '/images/team/vishal.png',
-  },
-  {
-    name: 'Sangeeth Kirushika',
-    position: 'Vice-Chairperson',
-    bio: 'ASME-VIT',
-    image: '/images/team/sangeeth.png',
-  },
+  
 ];
 
 const TeamSection = () => {

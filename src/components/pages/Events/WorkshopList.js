@@ -12,7 +12,7 @@ const workshops = [
   {
     id: 'HoverX',
     title: 'HoverX',
-    image: '/images/event_logos/hoverX_2.png'
+    image: '/images/event_logos/hoverX_3.png'
   },
 ];
 
