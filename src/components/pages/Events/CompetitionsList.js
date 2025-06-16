@@ -7,17 +7,17 @@ const competitions = [
   {
     id: 'Aerodash 2.0',
     title: 'Aerodash 2.0',
-    image: '/images/event_logos/aerodash.png'
+    image: '/images/event_logos/aerodash_2.png'
   },
   {
     id: 'MarinaX',
     title: 'MarinaX',
-    image: '/images/event_logos/marinaX.png'
+    image: '/images/event_logos/marinaX_2.png'
   },
   {
     id: 'Mechnovate Drone Racing Challenge (MDRC)',
     title: 'Mechnovate Drone Racing Challenge (MDRC)',
-    image: '/images/event_logos/mdrc.png'
+    image: '/images/event_logos/mdrc_2.png'
   },
 ];
 
@@ -31,7 +31,7 @@ function CompetitionsList() {
             <Link to={`/Events/Competitions/${comp.id}`} className="competition-card-link">
               <div className="competition-card">
                 <img src={comp.image} alt={comp.title} />
-                <div className="competition-title">{comp.title}</div>
+                {/*<div className="competition-title">{comp.title}</div>*/}
               </div>
             </Link>
           </li>

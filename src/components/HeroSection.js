@@ -15,7 +15,7 @@ function HeroSection() {
           </div>
         )}
         <video
-          src="./videos/final.mp4"
+          src="./videos/timeline.mov"
           autoPlay
           loop
           muted
