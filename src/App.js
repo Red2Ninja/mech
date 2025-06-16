@@ -13,6 +13,7 @@ import WorkshopList from './components/pages/Events/WorkshopList'; // renamed fr
 import WorkshopDetails from './components/pages/Events/WorkshopDetails';
 import SpeakerSession from './components/pages/Events/Speaker';
 import Mechathon from './components/pages/Events/Mechathon';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path = '/' exact element={<Home />} />
       <Route path = '/Location' exact element={<Location />} />
+      <Route path = '/Contact' exact element={<Contact />} />
       <Route path='/Events/Competitions' element={<CompetitionsList />} />
           <Route path='/Events/Competitions/:id' element={<CompetitionDetails />} />
        <Route path='/Events/Workshops' element={<WorkshopList />} />

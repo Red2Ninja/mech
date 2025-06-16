@@ -1,0 +1,73 @@
+
+@font-face {
+  font-family: Space;
+  src: url(../assets/fonts/spyagencybold.ttf);
+}
+
+
+.contact-us {
+  padding: 3rem 2rem;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-us h2 {
+  font-size: 2.8rem;
+  color: #FD6821;
+  text-shadow: 0 0 8px #FD6821;
+  font-family: Space;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(253, 104, 33, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.contact-card a {
+  color: #FD6821;
+  text-decoration: none;
+}
+
+.official-email {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.official-email a {
+  color: #FD6821;
+}
