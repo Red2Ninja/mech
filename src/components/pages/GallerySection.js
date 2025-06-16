@@ -11,7 +11,6 @@ const images = [
 
   "/images/gallery/gallery2.jpg",
   "/images/gallery/gallery3.jpg",
-  "/images/gallery/gallery4.jpg",
   "/images/gallery/gallery5.jpg",
   "/images/gallery/gallery6.jpg",
   "/images/gallery/gallery7.jpg",
@@ -46,7 +45,7 @@ function GallerySection() {
           dynamicBullets: true 
         }}
         autoplay={{ 
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true
         }}
