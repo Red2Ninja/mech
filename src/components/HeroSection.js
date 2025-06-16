@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './HeroSection.css';
 import '../App.css';
-import mascot from '../assets/Mascot.png';
 
 function HeroSection() {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -10,9 +9,7 @@ function HeroSection() {
     <section id="home">
       <div className='hero-container'>
         {!videoLoaded && (
-          <div className="mascot-loader">
-            <img src={mascot} alt="Loading..." />
-          </div>
+          <div className="video-loader"></div>
         )}
         <video
           src="./videos/timeline.mov"
