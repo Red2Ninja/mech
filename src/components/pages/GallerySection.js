@@ -46,7 +46,7 @@ function GallerySection() {
           dynamicBullets: true 
         }}
         autoplay={{ 
-          delay: 4000,
+          delay: 2500,
           disableOnInteraction: false,
           pauseOnMouseEnter: true
         }}
