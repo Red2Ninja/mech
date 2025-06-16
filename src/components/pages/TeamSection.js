@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: 'Dr. Naiju C.D. ',
-    position: 'Dean, School of Mechanical Engineering',
+    position: 'Director Of Student Welfare',
     bio: 'Symposium Chair',
     image: '/images/team/naiju.jpg',
   },
