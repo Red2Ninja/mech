@@ -8,7 +8,7 @@ import "./GallerySection.css";
 
 const images = [
     "/images/gallery/gallery16.jpg",
-  "/images/gallery/gallery1.jpg",
+
   "/images/gallery/gallery2.jpg",
   "/images/gallery/gallery3.jpg",
   "/images/gallery/gallery4.jpg",
