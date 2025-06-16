@@ -143,6 +143,7 @@ h1 {
   filter: drop-shadow(0 0 8px rgba(255, 148, 82, 0.5));
   text-align: right;
   line-height: 1.2;
+  font-family: Space;
 }
 
 .card-content {
