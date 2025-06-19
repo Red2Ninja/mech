@@ -1,4 +1,4 @@
-import React from 'react'
+{/*import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Carditems from './Carditems'
 import './Cards.css'
@@ -20,4 +20,4 @@ function Cards() {
   )
 }
 
-export default Cards;
+export default Cards;*/}

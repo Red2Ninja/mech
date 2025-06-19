@@ -67,7 +67,7 @@ function AboutSection() {
             />
           </div>
           <div className='card-content-section'>
-            <h2 className='card-title'>ABOUT ASME-VIT</h2>
+            <h2 className='card-title'>ABOUT ASME-VIT?</h2>
             <p className='card-content'>
               We are a vibrant community of aspiring engineers dedicated to enhancing our skills and knowledge. Established in 2010 with the help of officials from ASME India, we have transpired to be one of the largest and the most distinguished student chapters directing our focus on stimulating innovation, fostering professional development, and networking opportunities. We impart a platform for students to explore their passion for mechanical engineering and make significant contributions to the field of mechanical engineering.
             </p>

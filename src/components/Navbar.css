@@ -1,6 +1,7 @@
 @font-face {
   font-family: Square;
   src: url(../assets/fonts/Square.ttf);
+  
 }
 
 .navbar {
@@ -32,6 +33,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  
 }
 
 .center-logo img {
@@ -71,7 +73,8 @@
 }
 
 .nav-item .nav-links:hover {
-  color: white;
+  color: rgb(254, 254, 254);
+  text-decoration: underline;
 }
 
 /* Mobile nav */

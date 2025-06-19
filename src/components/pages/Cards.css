@@ -25,7 +25,7 @@
 
 .event-card {
   position: relative;
-  width: 300px;
+  width: 280px;
   height: 450px;
   border-radius: 16px;
   overflow: hidden;
@@ -64,28 +64,6 @@
   
 }
 
-.audiowide-regular {
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.fontdiner-swanky-regular {
-  font-family: "Fontdiner Swanky", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.stalinist-one-regular {
-  font-family: "Stalinist One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 
-.oswald {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:500;
-  font-style: normal;
-}
+

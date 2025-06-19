@@ -36,9 +36,7 @@ function Navbar() {
                         <li className="nav-item ">
                             <Link to="/#about" className="nav-links" onClick={closeMobileMenu}>Home</Link>
                         </li>
-                        {/*<li className="nav-item ">
-                            <Link to='/#about' className='nav-links' onClick={closeMobileMenu}>About</Link>
-                        </li>*/}
+                        
                         
                         <li className="nav-item">
                             <Link to='/#events' className='nav-links' onClick={closeMobileMenu}>Events</Link>
@@ -48,8 +46,12 @@ function Navbar() {
                         </li>
 
                         <li className="nav-item ">
-                            <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>Contact</Link>
+                            <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>Contact Us</Link>
                         </li>
+
+                        {/*<li className="nav-item ">
+                            <Link to='/#about' className='nav-links' onClick={closeMobileMenu}>About</Link>
+                        </li>*/}
 
                     </ul>
                 </div>

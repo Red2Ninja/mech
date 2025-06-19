@@ -9,11 +9,16 @@
 }
 
 .mascot-container img {
-  width: 160px;
+  width: 120px;
   height: auto;
   transition: transform 0.3s ease;
   margin-right: 30px;
 }
+
+.text{
+  display:none;
+}
+
 
 /* Hover effect */
 .mascot-container:hover img {
@@ -23,6 +28,7 @@
 /* Click animation */
 .jump-spin {
   animation: jumpSpin 1s ease forwards;
+  
 }
 
 @keyframes floaty {

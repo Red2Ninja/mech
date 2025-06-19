@@ -145,11 +145,11 @@
 
 .competitions-list h2 {
   font-size: 2.8rem;
-  margin-bottom: 2.5rem;
   color: #FD6821;
-  text-shadow: 0 0 8px #ff9452;
-  text-align: center;
+  text-shadow: 0 0 8px #FD6821;
   font-family: Space;
+  text-align: center;
+
 }
 
 .competitions-list ul {

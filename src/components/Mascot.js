@@ -14,6 +14,7 @@ function Mascot() {
   return (
     <div className={`mascot-container ${animate ? 'jump-spin' : ''}`} onClick={handleClick}>
       <img src={mascotImage} alt="Mascot" />
+      <p className='text'>Hi,I am Luma!</p>
     </div>
   );
 }

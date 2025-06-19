@@ -6,7 +6,7 @@ import Home from './components/pages/Home';
 import SpaceThemedPage from './components/space_bg';
 import CompetitionsList from './components/pages/Events/CompetitionsList';
 import CompetitionDetails from './components/pages/Events/CompetitionDetails';
-/*import Mascot from './components/Mascot';*/
+import Mascot from './components/Mascot';
 import './App.css';
 import Location from './components/pages/Location';
 import WorkshopList from './components/pages/Events/WorkshopList'; // renamed from CompetitionsList
@@ -21,6 +21,7 @@ function App() {
       <SpaceThemedPage/>
       <Router>
       <Navbar />
+      
       <Routes>
         <Route path = '/' exact element={<Home />} />
       <Route path = '/Location' exact element={<Location />} />

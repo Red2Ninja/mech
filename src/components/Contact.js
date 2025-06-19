@@ -32,7 +32,7 @@ function Contact() {
       </div>
       <div className="official-email">
         <p>For general queries, reach out to us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:mechnovate@gmail.com">mechnovate@vit.ac.in</a></p>
+        <p><strong>Email: </strong> <a href="mailto:mechnovate@gmail.com">mechnovate@vit.ac.in</a></p>
       </div>
     </section>
   );
