@@ -34,6 +34,9 @@
   background-color: #0e0a2f;
 }
 
+
+
+
 .event-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 30px #FD6821;
