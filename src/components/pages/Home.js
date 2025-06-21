@@ -7,7 +7,7 @@ import Footer from './Footer'
 import TeamSection from './TeamSection'
 import Location from './Location'
 import GallerySection from './GallerySection'
-import Carditems from './Carditems'
+import Cards from './Cards'
 
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
     <div>
         <HeroSection />
         <AboutSection />
-        <Carditems />
+        <Cards />
         
         <GallerySection />
         <TeamSection />
