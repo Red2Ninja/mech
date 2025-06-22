@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import {HashRouter as Router,Routes,Route} from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
 import SpaceThemedPage from './components/space_bg';
@@ -9,7 +9,7 @@ import CompetitionDetails from './components/pages/Events/CompetitionDetails';
 import Mascot from './components/Mascot';
 import './App.css';
 import Location from './components/pages/Location';
-import WorkshopList from './components/pages/Events/WorkshopList'; // renamed from CompetitionsList
+import WorkshopList from './components/pages/Events/WorkshopList'; 
 import WorkshopDetails from './components/pages/Events/WorkshopDetails';
 import SpeakerSession from './components/pages/Events/Speaker';
 import Mechathon from './components/pages/Events/Mechathon';
