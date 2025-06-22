@@ -15,7 +15,7 @@ const Mechathon = () => {
           <p><strong>Date:</strong> 28th September</p>
           <p><strong>Time:</strong> 3:00 PM – 5:00 PM</p>
           <p><strong>Entry Fee:</strong> Free</p>
-          <a href="/pdfs/speaker_details.pdf" target="_blank" rel="noopener noreferrer">📄 Meet the Speakers</a>
+          <a href="/pdfs/speaker_details.pdf" target="_blank" rel="noopener noreferrer">Meet the Speakers</a>
         </div>
 
         {/* Image Card */}

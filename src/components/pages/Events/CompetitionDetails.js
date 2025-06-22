@@ -61,9 +61,9 @@ function CompetitionDetails() {
           ) : (
             <p>{comp.details}</p>
           )}
-          <a href={comp.pdf} target="_blank" rel="noopener noreferrer">📄 View Rules (PDF)</a><br />
-          <a href={comp.form} target="_blank" rel="noopener noreferrer">📝 Register via Google Form</a><br />
-          <a href={comp.payment} target="_blank" rel="noopener noreferrer">💳 Pay Entry Fee</a>
+          <a href={comp.pdf} target="_blank" rel="noopener noreferrer">View Rules (PDF)</a><br />
+          <a href={comp.form} target="_blank" rel="noopener noreferrer">Register via Google Form</a><br />
+          <a href={comp.payment} target="_blank" rel="noopener noreferrer">Pay Entry Fee</a>
         </div>
         <div>
           <img src={comp.image} alt={id} />
