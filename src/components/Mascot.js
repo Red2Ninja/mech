@@ -18,5 +18,5 @@ function Mascot() {
     </div>
   );
 }
-
+/*https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4*/
 export default Mascot;

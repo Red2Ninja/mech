@@ -19,7 +19,7 @@ const workshops = [
 function WorkshopsList() {
   return (
     <div className="workshops-list">
-      <h2>Workshops</h2>
+      <h2>All Workshop</h2>
       <ul>
         {workshops.map((workshop) => (
           <li key={workshop.id}>
