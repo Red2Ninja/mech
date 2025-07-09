@@ -61,11 +61,13 @@
 .contact-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  color : white;
 }
 
 .contact-card p {
   font-size: 0.95rem;
   margin: 0.3rem 0;
+  color : white;
 }
 
 .contact-card a {
