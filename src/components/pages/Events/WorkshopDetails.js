@@ -13,7 +13,7 @@ const workshopData = {
       'Registration Fee: 300 Rs',
     ],
     form: 'https://docs.google.com/forms/d/1nZ2XMWoFQBrENMXrsOt8NollGos862EcaXjhLpxBoGs/edit',
-    payment: 'https://paymentgateway.com/design-sprint',
+    payment: 'https://events.vit.ac.in/events/ASME',
   },
   'HoverX': {
     title: 'HoverX',
@@ -25,7 +25,7 @@ const workshopData = {
       'Registration Fee: 300 Rs',
     ],
     form: 'https://forms.gle/code-mania-form',
-    payment: 'https://paymentgateway.com/code-mania',
+    payment: 'https://events.vit.ac.in/events/ASME',
   }
 };
 

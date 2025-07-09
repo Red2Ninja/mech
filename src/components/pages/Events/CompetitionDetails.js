@@ -12,7 +12,7 @@ const competitionData = {
       'Registration Fee: 300 Rs',
     ],
     form: 'https://docs.google.com/forms/d/1nZ2XMWoFQBrENMXrsOt8NollGos862EcaXjhLpxBoGs/edit',
-    payment: 'https://paymentgateway.com/design-sprint',
+    payment: 'https://events.vit.ac.in/events/ASME',
   },
   'MarinaX': {
     image: 'images/event_logos/marinaX',
@@ -24,7 +24,7 @@ const competitionData = {
     ],
     
     form: 'https://forms.gle/code-mania-form',
-    payment: 'https://paymentgateway.com/code-mania',
+    payment: 'https://events.vit.ac.in/events/ASME',
   },
   'Mechnovate Drone Racing Challenge (MDRC)': {
     image: 'images/event_logos/mdrc',
@@ -35,7 +35,7 @@ const competitionData = {
       'Registration Fee: 300 Rs',
     ],
     form: 'https://forms.gle/circuit-crunch-form',
-    payment: 'https://paymentgateway.com/circuit-crunch',
+    payment: 'https://events.vit.ac.in/events/ASME',
   },
 };
 
