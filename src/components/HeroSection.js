@@ -16,9 +16,10 @@ function HeroSection() {
           autoPlay
           loop
           muted
-          className={videoLoaded ? '' : 'hidden'}
-          onCanPlayThrough={() => setVideoLoaded(true)}
-        ></video>
+          playsInline
+          onCanPlay={() => setVideoLoaded(true)}
+          className={`hero-video ${videoLoaded ? '' : 'hidden'}`}
+        />
       </div>
     </section>
   );

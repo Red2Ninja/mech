@@ -5,7 +5,7 @@ import './CompetitionDetails.css';
 const competitionData = {
   'Aerodash 2.0': {
     image: '/images/event_logos/aerodash.png', 
-    pdf: '', 
+    pdf: 'https://drive.google.com/drive/folders/1bktuZ7YeGYWKSRcdw8hfOxHg4zEqpJud?usp=sharing', 
     details: [
       'AeroDash 2.0 is a national-level aeromodelling competition that challenges teams to design, present, and fly innovative aircraft in Regular and Micro classes. Spanning three days, the event features technical presentations, rigorous inspections, and competitive flight rounds, culminating in a grand awards ceremony. With expert pilots, industry-level judging, and a focus on engineering excellence, AeroDash 2.0 offers participants a platform to showcase aeronautical ingenuity and teamwork in a dynamic, real-world competitive environment.',
       'Team Size: 4-5 members',
