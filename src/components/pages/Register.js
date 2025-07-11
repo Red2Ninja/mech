@@ -1,59 +1,104 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Register.css';
 
+const steps = [
+  {
+    id: 1,
+    title: "Select Your Event",
+    short: "Choose your event or workshop.",
+    description:
+      "Browse through the available events and workshops, and choose the one you wish to participate in.",
+    image: "/images/masc1.png",
+    tags: ["Explore", "Events", "Workshops"]
+  },
+  {
+    id: 2,
+    title: "Make the Payment",
+    short: "Secure your slot.",
+    description:
+      "Click on the payment link provided. One member pays for team events; individuals for workshops.",
+    image: "/images/masc2.png",
+    tags: ["UPI", "Secure", "Team"]
+  },
+  {
+    id: 3,
+    title: "Fill the Google Form",
+    short: "Submit your details.",
+    description:
+      "Enter payment and team details in the provided form to ensure you're listed.",
+    image: "/images/masc3.png",
+    tags: ["Google Form", "Details"]
+  },
+  {
+    id: 4,
+    title: "Confirm Registration",
+    short: "You're almost there!",
+    description:
+      "Registration is confirmed once both the payment and form are completed.",
+    image: "/images/masc4.png",
+    tags: ["Confirmed", "Checklist"]
+  },
+  {
+    id: 5,
+    title: "Access Event Info",
+    short: "Get prepped.",
+    description:
+      "Review the rulebooks and details available for the event or workshop.",
+    image: "/images/masc5.png",
+    tags: ["Rules", "Guide"]
+  },
+  {
+    id: 6,
+    title: "Contact & Queries",
+    short: "Need help?",
+    description:
+      "Join our info group or contact the organizing team for any queries.",
+    image: "/images/masc6.png",
+    tags: ["Support", "Help"]
+  },
+];
+
 function RegisterQuest() {
-  const steps = [
-    {
-      id: 1,
-      title: "Select Your Event",
-      mission: "Browse through the available events and workshops, and choose the one you wish to participate in.",
-    },
-    {
-      id: 2,
-      title: "Make the Payment",
-      mission: "Click on the payment link provided on the event or workshop page. One member pays for team events; individuals pay for workshops.",
-    },
-    {
-      id: 3,
-      title: "Fill the Google Form",
-      mission: "Enter your payment details and team information (if applicable) in the provided Google Form.",
-    },
-    {
-      id: 4,
-      title: "Confirm Registration",
-      mission: "Your registration is confirmed only after both payment and form submission.",
-    },
-    {
-      id: 5,
-      title: "Access Event Information",
-      mission: "Read the rulebooks and event guidelines available on the respective pages.",
-    },
-    {
-      id: 6,
-      title: "Contact & Queries",
-      mission: "Join our official group for updates or contact the organizing team for assistance.",
-    },
-  ];
+  const [active, setActive] = useState(0);
+  const step = steps[active];
 
   return (
-    <section className="quest-section" id="register">
-      <h2 className="quest-heading">Event Registration Guidelines</h2>
-      <p className="quest-subtext">Follow these steps to successfully register for your desired event or workshop:</p>
-
-      <div className="quest-grid">
-        {steps.map((step, index) => (
-          <div
-            className="quest-card"
-            key={index}
-            style={{ animationDelay: `${index * 0.2}s` }}
-          >
-            <div className="quest-level">Step {step.id}</div>
-            <h3 className="quest-title">{step.title}</h3>
-            <p className="quest-mission">{step.mission}</p>
+    <>
+      <h2 className="main-heading">Event Registration Guidelines</h2>
+      
+      <section className="modern-register-section" id="register">
+        <div className="register-container">
+          {/* Left: Step List */}
+          <div className="step-list">
+            {steps.map((s, idx) => (
+              <div
+                key={s.id}
+                className={`step-item ${active === idx ? "active" : ""}`}
+                onMouseEnter={() => setActive(idx)}
+              >
+                <span className="step-number">{String(s.id).padStart(2, "0")}</span>
+                <div className="step-content">
+                  <h3>{s.title}</h3>
+                  <p>{s.short}</p>
+                </div>
+                <div className="step-arrow">→</div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </section>
+
+          {/* Right: Only Image */}
+          <div className="step-details">
+            <div className="details-wrapper">
+              <img src={step.image} alt={step.title} />
+              <div className="step-id-watermark">{String(step.id).padStart(2, "0")}</div>
+              <div className="step-number-watermark">{String(step.id).padStart(2, '0')}</div>
+            </div>
+          </div>
+        </div>
+        
+
+      </section>
+    </>
   );
 }
 

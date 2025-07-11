@@ -9,7 +9,7 @@ const coordinators = [
     email: 'jueepatil0905@gmail.com'
   },
   {
-    name: 'Vishal',
+    name: 'Vishal Singh',
     image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237437/vishal_gxtblg.png',
     phone: '+91 6393901409',
     email: 'Vishal.singh2022a@gmail.com'

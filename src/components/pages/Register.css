@@ -7,102 +7,158 @@
   src: url('../../assets/fonts/poppins.ttf');
 }
 
-.quest-section {
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-   /* Optional: dark background */
-}
-
-.quest-heading {
-  font-size: 2.8rem;
+h2{
+     font-size: 2.8rem;
   color: #FD6821;
-  margin-bottom: 3rem;
   text-shadow: 0 0 8px #FD6821;
   font-family: Space;
+  text-align: center;
 }
+p{
+    text-align: center;
+}
+.modern-register-section {
 
-.quest-subtext {
+  padding: 100px 30px;
+  color: white;
   font-family: Poppins;
-  color: #ccc;
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 60px auto;
 }
 
-.quest-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
-  margin: 0 auto;
+.register-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+  gap: 40px;
 }
 
-.quest-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid rgba(253, 104, 33, 0.2);
-  border-radius: 16px;
-  padding: 25px 20px;
-  text-align: left;
-  position: relative;
+.step-list {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 63, 102, 0.3);
+  border-left: 4px solid transparent;
   cursor: pointer;
-  transition: all 0.4s ease;
-  will-change: transform, opacity;
-
-  /* Animation */
-  opacity: 0;
-  transform: translateY(30px);
-  animation-name: fadeSlideUp;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
+  transition: 0.3s ease;
 }
 
-.quest-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(253, 104, 33, 0.3);
-  border-color: #FD6821;
-  background: rgba(255, 255, 255, 0.07);
+.step-item.active {
+  background: rgba(0, 63, 102, 0.5);
+  border-left: 4px solid #FD6821;
+  box-shadow: 0 0 10px rgba(253, 104, 33, 0.3);
 }
 
-.quest-level {
-  font-family: Poppins;
-  font-size: 14px;
-  color: #FD6821;
-  margin-bottom: 8px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.quest-title {
+.step-number {
   font-family: Space;
-  font-size: 20px;
-  color: #005082;
-  margin-bottom: 10px;
+  font-size: 28px;
+  color: #FD6821;
+  margin-right: 16px;
+  min-width: 40px;
 }
 
-.quest-mission {
-  font-family: Poppins;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #e0e0e0;
+.step-content h3 {
+  font-family: Space;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 4px;
 }
 
-@keyframes fadeSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+.step-content p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.step-arrow {
+  margin-left: auto;
+  color: #FD6821;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.step-item:hover .step-arrow {
+  transform: translateX(5px);
+}
+
+/* Right section */
+.step-details {
+  flex: 1;
+  min-width: 320px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  max-height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.details-wrapper img {
+   width: 100%;
+  max-height: 100%;
+  object-fit:cover; /* Ensures image fills the box without distortion */
+  border-radius: 12px;
+}
+
+.step-id-watermark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 80px;
+  font-family: Space;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.step-info h2 {
+  font-family: Space;
+  color: #FD6821;
+  margin-top: 25px;
+  font-size: 2rem;
+}
+
+.step-info p {
+  color: #ccc;
+  margin: 15px 0 20px;
+  font-size: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background: rgba(253, 104, 33, 0.2);
+  color: #FD6821;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 600px) {
-  .quest-title {
-    font-size: 18px;
-  }
-  .quest-mission {
-    font-size: 14px;
-  }
+.step-number-watermark {
+  font-size: 100px;
+  color: rgba(255,255,255,0.05);
+  text-align: center;
+  font-family: Space;
+  margin-top: 30px;
 }

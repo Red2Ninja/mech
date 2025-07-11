@@ -28,7 +28,8 @@
 }
 
 .team-card {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 63, 102, 0.3); /* 50% opacity */
+;
   border: 1.5px solid rgba(253, 104, 33, 0.2);;
   border-radius: 12px;
   padding: 1.5rem;
