@@ -7,7 +7,7 @@ const steps = [
     title: "Select Your Event",
     description: `• Browse through the list of available events and workshops.
 • Choose the one you wish to participate in.`,
-    image: "/images/masc1.png",
+    image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262111/masc1_tfsxmb.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ For Team Events:
 • Only one team member (preferably the Team Captain) needs to make the payment on behalf of the entire team.
 For Workshops:
 • Each participant must make their own individual payment.`,
-    image: "/images/masc2.png",
+    image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262132/masc2_xbc0jm.png",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ For Workshops:
   ◦ Team members’ information
 For Workshops:
 • Each individual must fill out the Google Form with their own payment and personal details.`,
-    image: "/images/masc3.png",
+    image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262146/masc3_ot67qz.png",
   },
   {
     id: 4,
@@ -36,14 +36,14 @@ For Workshops:
     description: `• Registration is considered complete only after:
   ◦ Successful payment
   ◦ Accurate completion of the Google Form` ,
-    image: "/images/masc4.png",
+    image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262219/masc4_g4sgtp.png",
   },
   {
     id: 5,
     title: "Access Event Info",
     description: `• You can find Rulebooks and Guidelines on the respective event pages.
 • Make sure to read them carefully to understand the event requirements.`,
-    image: "/images/masc5.png",
+    image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262237/masc5_ug0d5c.png",
   },
   {
     id: 6,
@@ -51,10 +51,10 @@ For Workshops:
     description: `For Queries & FAQs:
 • Join the group linked below for answers to frequently asked questions and real-time updates.
 • You can also contact us directly for further assistance.`,
-    image: "/images/masc6.png",
+    image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262275/masc6_lw3dro.png",
     link: {
     text: "Join Whatsapp Group",
-    url: "https://chat.whatsapp.com/DZhQp0jZNh1J8Y85ZzJ4S6?mode=r_t"  // ← Replace with your actual link
+    url: "https://chat.whatsapp.com/DZhQp0jZNh1J8Y85ZzJ4S6?mode=r_t"  
   }
   },
 ];
