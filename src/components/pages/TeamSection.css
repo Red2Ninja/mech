@@ -28,8 +28,8 @@
 }
 
 .team-card {
-  background-color: #1a1a1a;
-  border: 1px solid #FD6821;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(253, 104, 33, 0.2);;
   border-radius: 12px;
   padding: 1.5rem;
   width: 260px;

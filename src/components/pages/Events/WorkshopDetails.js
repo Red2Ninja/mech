@@ -6,7 +6,7 @@ const workshopData = {
   'Orbitron_A_cansat_Workshop': {
     title: 'Orbitron-A Cansat Workshop',
     image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235229/Orbiton_poster_tgzvkv.jpg', 
-    pdf: '/docs/web_mini_project.pdf', 
+  
     details: [
       'Orbitron is a comprehensive two-day workshop focused on the design, assembly, and operation of a miniature can satellite system. Participants will engage in theoretical sessions covering core components and wireless communication, followed by hands-on activities including sensor integration, wireless data transmission, and data logging. The workshop culminates in practical drop tests and data analysis, providing valuable insights into aerospace technology and embedded systems within a collaborative learning environment.',
       
@@ -17,13 +17,13 @@ const workshopData = {
   'HoverX': {
     title: 'HoverX',
     image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235156/Hover_X_post_qpvky7.jpg',
-    pdf: '/pdfs/code-mania-rules.pdf',
+  
     details: [
       'HoverX is a one-day hands-on workshop focused on the design and fabrication of functional hovercrafts. Participants work in teams to understand the principles of aerodynamics, propulsion, and stability through practical application. The session fosters innovation, teamwork, and technical creativity as students bring their prototypes to life. By the end of the workshop, each group would have constructed and tested a working hovercraft, gaining valuable experience in fabrication techniques and applied engineering problem-solving.',
       
       
     ],
-    form: 'https://forms.gle/code-mania-form',
+    form: 'Gform – https://forms.gle/Hbxbv8ep3QE9FmD57',
     payment: 'https://events.vit.ac.in/events/ASME',
   }
 };

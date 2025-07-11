@@ -8,6 +8,7 @@ import Footer from './Footer'
 import TeamSection from './TeamSection'
 import Location from './Location'
 import GallerySection from './GallerySection'
+import RegisterQuest from './Register'
 
 
 
@@ -17,7 +18,7 @@ function Home() {
         <HeroSection />
         <AboutSection />
         <Cards />
-        
+        <RegisterQuest />
         <GallerySection />
         <TeamSection />
         

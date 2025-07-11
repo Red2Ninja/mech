@@ -1,6 +1,6 @@
 import React from 'react';
 import './OrangeCard.css'; 
-import Mascot from '../../assets/Mascot.png'; // Adjust path to your GIF
+ // Adjust path to your GIF
 
 function AboutSection() {
   return (
