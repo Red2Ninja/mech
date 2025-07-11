@@ -15,13 +15,13 @@ const competitionData = {
   },
   'MarinaX': {
     image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235174/Marinax_poster_hyfdrg.jpg',
-    pdf: '/pdfs/code-mania-rules.pdf',
+    pdf: 'https://drive.google.com/file/d/1wHn-m-uyC-HS_h6ZGFGfkT39ynsfVARe/view?usp=sharing',
     details: [
       'An Autonomous Underwater Vehicle (AUV) competition designed to challenge teams in mission-based tasks such as precise navigation, object detection, and retrieval. Over the course of two days, participants will demonstrate their technical expertise and innovative approaches in underwater robotics. This event provides a platform for practical application of engineering principles, encouraging creativity and problem-solving in a competitive yet collaborative environment. Teams will be evaluated on performance, efficiency, and design excellence throughout the competition.',
       'Team Size: 5-12 members',
     ],
     
-    form: '',
+    form: 'https://forms.gle/XAkG1e21n62bUkEVA',
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'Mechnovate Drone Racing Challenge (MDRC)': {

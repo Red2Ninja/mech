@@ -12,12 +12,12 @@ const SpeakerSession = () => {
           <p>
            Keynote Sessions serve as a platform where industry leaders, academic professionals, and engineering enthusiasts converge to exchange knowledge and perspectives. Delivered by distinguished experts, each session delves into a focused technical theme, offering valuable insights drawn from real-world experience and current advancements. These talks aim to inspire, inform, and bridge the gap between theory and practice, fostering a deeper understanding of emerging trends and encouraging thoughtful discourse within the engineering and innovation community.
           </p>
-          <a href="/pdfs/speaker_details.pdf" target="_blank" rel="noopener noreferrer">Meet the Speakers</a>
+          <a href="https://events.vit.ac.in/events/ASME" target="_blank" rel="noopener noreferrer">Pay Entry Fee</a>
         </div>
 
         {/* Image Card */}
         <div className="session-card session-image">
-          <img src={speakerImg} alt="Speaker Session" />
+          <img src="https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752254970/sapentia_cxpdaf.jpg" alt="Speaker Session" />
         </div>
       </div>
     </section>

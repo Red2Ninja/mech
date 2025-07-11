@@ -7,19 +7,17 @@
   src: url('../../assets/fonts/poppins.ttf');
 }
 
-h2{
-     font-size: 2.8rem;
+.main-heading {
+  font-size: 2.8rem;
   color: #FD6821;
+  margin-bottom: 2rem;
   text-shadow: 0 0 8px #FD6821;
   font-family: Space;
   text-align: center;
 }
-p{
-    text-align: center;
-}
-.modern-register-section {
 
-  padding: 100px 30px;
+.modern-register-section {
+  padding: 80px 30px;
   color: white;
   font-family: Poppins;
 }
@@ -87,78 +85,69 @@ p{
   transform: translateX(5px);
 }
 
-/* Right section */
+/* Right Section */
 .step-details {
   flex: 1;
   min-width: 320px;
-  background: #1a1a1a;
+  
   border-radius: 12px;
-  max-height: 600px;
-  position: relative;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-}
-
-.details-wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  align-items: center;
 }
 
 .details-wrapper img {
-   width: 100%;
-  max-height: 100%;
-  object-fit:cover; /* Ensures image fills the box without distortion */
-  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.step-id-watermark {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 80px;
-  font-family: Space;
-  color: rgba(255, 255, 255, 0.08);
-  pointer-events: none;
+/* Countdown Timer */
+.countdown-timer {
+  margin-top: 30px;
+  text-align: center;
 }
 
-.step-info h2 {
+.countdown-timer h3 {
   font-family: Space;
   color: #FD6821;
-  margin-top: 25px;
-  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
-.step-info p {
-  color: #ccc;
-  margin: 15px 0 20px;
-  font-size: 1rem;
-}
-
-.tags {
+.timer-boxes {
   display: flex;
+  justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
-.tags span {
-  background: rgba(253, 104, 33, 0.2);
+.timer-unit {
+  background-color: rgba(253, 104, 33, 0.2);
+  border: 1px solid #FD6821;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 70px;
+}
+
+.timer-unit .time {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
   color: #FD6821;
-  padding: 6px 12px;
-  border-radius: 6px;
+  font-family: Space;
+}
+
+.timer-unit .label {
   font-size: 0.8rem;
+  color: #fff;
+  margin-top: 4px;
 }
 
 @media screen and (max-width: 768px) {
   .register-container {
     flex-direction: column;
   }
-}
-
-.step-number-watermark {
-  font-size: 100px;
-  color: rgba(255,255,255,0.05);
-  text-align: center;
-  font-family: Space;
-  margin-top: 30px;
 }
