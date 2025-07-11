@@ -70,6 +70,7 @@
 }
 
 .step-content p {
+    white-space: pre-line;
   font-size: 0.9rem;
   color: #aaa;
 }
@@ -100,7 +101,7 @@
 .details-wrapper img {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 700px;
   border-radius: 8px;
 }
 
@@ -149,5 +150,11 @@
 @media screen and (max-width: 768px) {
   .register-container {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .step-details {
+    display: none;
   }
 }
