@@ -7,17 +7,17 @@ const competitions = [
   {
     id: 'Aerodash 2.0',
     title: 'Aerodash 2.0',
-    image: '/images/event_logos/aerodash_2.png'
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235415/aerodash_2_xsxlz3.png'
   },
   {
     id: 'MarinaX',
     title: 'MarinaX',
-    image: '/images/event_logos/marinaX_2.png'
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235487/marinaX_2_egb1a1.png'
   },
   {
     id: 'Mechnovate Drone Racing Challenge (MDRC)',
     title: 'Mechnovate Drone Racing Challenge (MDRC)',
-    image: '/images/event_logos/mdrc_2.png'
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235463/mdrc_2_ujfydh.png'
   },
 ];
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import {HashRouter  as Router,Routes,Route} from 'react-router-dom';
+/*import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';*/
 import './App.css';
 import Home from './components/pages/Home';
 import SpaceThemedPage from './components/space_bg';

@@ -5,24 +5,23 @@ import './WorkshopDetails.css';
 const workshopData = {
   'Orbitron_A_cansat_Workshop': {
     title: 'Orbitron-A Cansat Workshop',
-    image: '/images/event_logos/orbitron', 
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235229/Orbiton_poster_tgzvkv.jpg', 
     pdf: '/docs/web_mini_project.pdf', 
     details: [
       'Orbitron is a comprehensive two-day workshop focused on the design, assembly, and operation of a miniature can satellite system. Participants will engage in theoretical sessions covering core components and wireless communication, followed by hands-on activities including sensor integration, wireless data transmission, and data logging. The workshop culminates in practical drop tests and data analysis, providing valuable insights into aerospace technology and embedded systems within a collaborative learning environment.',
-      'Team Size: 4-5 members',
-      'Registration Fee: 300 Rs',
+      
     ],
     form: 'https://docs.google.com/forms/d/1nZ2XMWoFQBrENMXrsOt8NollGos862EcaXjhLpxBoGs/edit',
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'HoverX': {
     title: 'HoverX',
-    image: '/images/event_logos/hoverX',
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235156/Hover_X_post_qpvky7.jpg',
     pdf: '/pdfs/code-mania-rules.pdf',
     details: [
       'HoverX is a one-day hands-on workshop focused on the design and fabrication of functional hovercrafts. Participants work in teams to understand the principles of aerodynamics, propulsion, and stability through practical application. The session fosters innovation, teamwork, and technical creativity as students bring their prototypes to life. By the end of the workshop, each group would have constructed and tested a working hovercraft, gaining valuable experience in fabrication techniques and applied engineering problem-solving.',
-      'Team Size: 4-5 members',
-      'Registration Fee: 300 Rs',
+      
+      
     ],
     form: 'https://forms.gle/code-mania-form',
     payment: 'https://events.vit.ac.in/events/ASME',
@@ -60,9 +59,11 @@ function WorkshopDetails() {
           ) : (
             <p>{workshop.details}</p>
           )}
-          <a href={workshop.pdf} target="_blank" rel="noopener noreferrer">View Rules (PDF)</a><br />
+          <a href={workshop.payment} target="_blank" rel="noopener noreferrer">Pay Entry Fee</a><br />
           <a href={workshop.form} target="_blank" rel="noopener noreferrer">Register via Google Form</a><br />
-          <a href={workshop.payment} target="_blank" rel="noopener noreferrer">Pay Entry Fee</a>
+          <a href={workshop.pdf} target="_blank" rel="noopener noreferrer">View Rules (PDF)</a><br />
+          
+          
         </div>
         <div>
           <img src={workshop.image} alt={workshop.title} />

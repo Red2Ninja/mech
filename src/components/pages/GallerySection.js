@@ -7,22 +7,23 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "./GallerySection.css";
 
 const images = [
-    "/images/gallery/gallery16.jpg",
+    "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237242/gallery16_ggxmvw.jpg",
+    "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237235/gallery14_uyhsc7.jpg",
 
-  "/images/gallery/gallery2.jpg",
-  "/images/gallery/gallery3.jpg",
-  "/images/gallery/gallery5.jpg",
-  "/images/gallery/gallery6.jpg",
-  "/images/gallery/gallery7.jpg",
-  "/images/gallery/gallery8.jpg",
-  "/images/gallery/gallery9.jpg",
-  "/images/gallery/gallery10.jpg",
-  "/images/gallery/gallery11.jpg",
-  "/images/gallery/gallery12.jpg",
-  "/images/gallery/gallery13.jpg",
-  "/images/gallery/gallery14.jpg",
-  "/images/gallery/gallery15.jpg",
-  "/images/gallery/gallery17.jpg"
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237245/gallery17_xhknan.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237266/gallery9_zir3nn.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237263/gallery8_lmovex.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237261/gallery7_zq6tds.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237257/gallery6_samwfa.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237254/gallery5_q0xzjk.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237251/gallery3_uel7rv.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237248/gallery2_yxmpoh.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237239/gallery15_xifko5.jpg",
+  
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237232/gallery13_cckrqe.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237228/gallery12_pfzprf.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237224/gallery11_g6vesy.jpg",
+  "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237223/gallery10_hhpjai.jpg"
 ];
 
 function GallerySection() {

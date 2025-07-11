@@ -4,37 +4,34 @@ import './CompetitionDetails.css';
 
 const competitionData = {
   'Aerodash 2.0': {
-    image: '/images/event_logos/aerodash.png', 
-    pdf: '', 
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235143/AERODASH_POSTER_xeiipf.jpg', 
+    pdf: 'https://drive.google.com/file/d/1ETnkXdR7cq1cHzeqEysA_ZGf_iZZ3KpU/view?usp=drive_link', 
     details: [
       'AeroDash 2.0 is a national-level aeromodelling competition that challenges teams to design, present, and fly innovative aircraft in Regular and Micro classes. Spanning three days, the event features technical presentations, rigorous inspections, and competitive flight rounds, culminating in a grand awards ceremony. With expert pilots, industry-level judging, and a focus on engineering excellence, AeroDash 2.0 offers participants a platform to showcase aeronautical ingenuity and teamwork in a dynamic, real-world competitive environment.',
-      'Team Size: 4-5 members',
-      'Registration Fee: 300 Rs',
+      'Team Size: 5-12 members',
     ],
-    form: '',
+    form: 'https://forms.gle/BseRczBvXGJWDMgq5',
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'MarinaX': {
-    image: 'images/event_logos/marinaX',
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235174/Marinax_poster_hyfdrg.jpg',
     pdf: '/pdfs/code-mania-rules.pdf',
     details: [
       'An Autonomous Underwater Vehicle (AUV) competition designed to challenge teams in mission-based tasks such as precise navigation, object detection, and retrieval. Over the course of two days, participants will demonstrate their technical expertise and innovative approaches in underwater robotics. This event provides a platform for practical application of engineering principles, encouraging creativity and problem-solving in a competitive yet collaborative environment. Teams will be evaluated on performance, efficiency, and design excellence throughout the competition.',
-      'Team Size: 4-5 members',
-      'Registration Fee: 300 Rs',
+      'Team Size: 5-12 members',
     ],
     
-    form: 'https://forms.gle/code-mania-form',
+    form: '',
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'Mechnovate Drone Racing Challenge (MDRC)': {
-    image: 'images/event_logos/mdrc',
-    pdf: '/pdfs/circuit-crunch-rules.pdf',
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235190/mdrc_klb0rw.jpg',
+    pdf: 'https://drive.google.com/file/d/1r5wtmXcxuur-MaHNb89s_ElhZEU-t0xB/view?usp=drive_link',
     details: [
       'The Mechnovate Drone Racing Challenge, a two-day competition invites collegiate teams to showcase their self-built drones in a multi-stage contest. Participants will undergo technical inspection, deliver presentations, and compete in dynamic racing rounds featuring challenging obstacle courses. Judged on design, innovation, and piloting skills, MDRC aims to foster creativity, teamwork, and engineering excellence within the drone racing community.',
-      'Team Size: 4-5 members',
-      'Registration Fee: 300 Rs',
+      'Team Size: 3-12 members',
     ],
-    form: 'https://forms.gle/circuit-crunch-form',
+    form: 'https://forms.gle/m8U6KChZMLiUqQEt7',
     payment: 'https://events.vit.ac.in/events/ASME',
   },
 };
@@ -61,9 +58,11 @@ function CompetitionDetails() {
           ) : (
             <p>{comp.details}</p>
           )}
-          <a href={comp.pdf} target="_blank" rel="noopener noreferrer">View Rules (PDF)</a><br />
+          <a href={comp.payment} target="_blank" rel="noopener noreferrer">Pay Entry Fee</a><br />
           <a href={comp.form} target="_blank" rel="noopener noreferrer">Register via Google Form</a><br />
-          <a href={comp.payment} target="_blank" rel="noopener noreferrer">Pay Entry Fee</a>
+          <a href={comp.pdf} target="_blank" rel="noopener noreferrer">View Rules (PDF)</a><br />
+          
+          
         </div>
         <div>
           <img src={comp.image} alt={id} />

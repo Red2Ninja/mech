@@ -12,9 +12,6 @@ const SpeakerSession = () => {
           <p>
            Keynote Sessions serve as a platform where industry leaders, academic professionals, and engineering enthusiasts converge to exchange knowledge and perspectives. Delivered by distinguished experts, each session delves into a focused technical theme, offering valuable insights drawn from real-world experience and current advancements. These talks aim to inspire, inform, and bridge the gap between theory and practice, fostering a deeper understanding of emerging trends and encouraging thoughtful discourse within the engineering and innovation community.
           </p>
-          <p><strong>Date:</strong> 28th September</p>
-          <p><strong>Time:</strong> 3:00 PM – 5:00 PM</p>
-          <p><strong>Entry Fee:</strong> Free</p>
           <a href="/pdfs/speaker_details.pdf" target="_blank" rel="noopener noreferrer">Meet the Speakers</a>
         </div>
 

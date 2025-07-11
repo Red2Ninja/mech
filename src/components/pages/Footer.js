@@ -44,7 +44,7 @@ function Footer() {
             </div>
             <div className="contact-item">
               
-              <span>+91 9372946497</span>
+              <span>+91 9702180838</span>
             </div>
             <div className="contact-item">
               
