@@ -61,7 +61,7 @@ function WorkshopDetails() {
           )}
           <a href={workshop.payment} target="_blank" rel="noopener noreferrer">Pay Entry Fee</a><br />
           <a href={workshop.form} target="_blank" rel="noopener noreferrer">Register via Google Form</a><br />
-          <a href={workshop.pdf} target="_blank" rel="noopener noreferrer">View Rules (PDF)</a><br />
+          
           
           
         </div>
