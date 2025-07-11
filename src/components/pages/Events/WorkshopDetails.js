@@ -11,7 +11,7 @@ const workshopData = {
       'Orbitron is a comprehensive two-day workshop focused on the design, assembly, and operation of a miniature can satellite system. Participants will engage in theoretical sessions covering core components and wireless communication, followed by hands-on activities including sensor integration, wireless data transmission, and data logging. The workshop culminates in practical drop tests and data analysis, providing valuable insights into aerospace technology and embedded systems within a collaborative learning environment.',
       
     ],
-    form: 'https://docs.google.com/forms/d/1nZ2XMWoFQBrENMXrsOt8NollGos862EcaXjhLpxBoGs/edit',
+    form: 'https://forms.gle/uKzu33ZKvnNG4g9u5',
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'HoverX': {
