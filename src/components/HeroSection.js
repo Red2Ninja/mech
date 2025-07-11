@@ -12,7 +12,7 @@ function HeroSection() {
           <div className="video-loader"></div>
         )}
         <video
-          src="./videos/timeline.mov"
+          src="https://res.cloudinary.com/detarpq3q/video/upload/v1752239088/Timeline_final_z8rmhh.mp4"
           autoPlay
           loop
           muted
