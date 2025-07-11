@@ -23,7 +23,7 @@ const workshopData = {
       
       
     ],
-    form: 'Gform – https://forms.gle/Hbxbv8ep3QE9FmD57',
+    form: 'https://forms.gle/Hbxbv8ep3QE9FmD57',
     payment: 'https://events.vit.ac.in/events/ASME',
   }
 };
