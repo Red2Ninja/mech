@@ -6,7 +6,7 @@
 
 .navbar {
   height: 100px;
-  background-color: rgba(0, 63, 102, 0.3);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
