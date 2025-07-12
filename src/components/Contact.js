@@ -4,7 +4,7 @@ import './Contact.css';
 const coordinators = [
   {
     name: 'Juee Patil',
-    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237443/Zuiii_k1hnts.jpg',
+    image: 'https://res.cloudinary.com/detarpq3q/image/upload/v1752309518/Screenshot_2025-07-12_140623_locgud.png',
     phone: '+91 9702180838',
     email: 'jueepatil0905@gmail.com'
   },
