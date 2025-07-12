@@ -65,7 +65,7 @@ h1 {
   padding: clamp(15px, 4vw, 40px);
   max-width: 1300px;
   width: calc(100% - 20px);
-  background-color:rgba(0, 63, 102, 0.3);
+  background-color:rgba(0, 63, 102, 0.2);
 
   backdrop-filter: blur(10px);
   color: #ffffff;
