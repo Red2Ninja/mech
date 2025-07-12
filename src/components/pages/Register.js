@@ -129,7 +129,7 @@ function RegisterQuest() {
             </div>
 
             <div className="countdown-timer">
-              <h3>Countdown to Event</h3>
+              <h3>The revolution begins in...</h3>
               <div className="timer-boxes">
                 <div className="timer-unit">
                   <span className="time">{timeLeft.days}</span>
