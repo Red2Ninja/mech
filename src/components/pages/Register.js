@@ -23,9 +23,7 @@ For Workshops:
     id: 3,
     title: "Complete the Google Form",
     description: `For Team Events:
-• After payment, the Team Captain must fill out the Google Form with:
-  ◦ Payment details
-  ◦ Team members’ information
+• After payment, the Team Captain must fill out the Google Form with Payment details and Team members’ information.
 For Workshops:
 • Each individual must fill out the Google Form with their own payment and personal details.`,
     image: "https://res.cloudinary.com/detarpq3q/image/upload/v1752262146/masc3_ot67qz.png",
