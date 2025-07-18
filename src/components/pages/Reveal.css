@@ -27,6 +27,7 @@
   font-size: 3rem;
   margin-bottom: 0.5rem;
   text-shadow: 0 0 10px #FD6821;
+  font-weight: bold;
 }
 
 .reveal-subhead {
@@ -42,6 +43,7 @@
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 0 20px rgba(253,104,33,0.3);
+  backdrop-filter: blur(10px);
 }
 
 .poster-wrapper {
@@ -49,6 +51,7 @@
   overflow: hidden;
   border-radius: 0.75rem;
   margin-bottom: 2rem;
+  background: #000;
 }
 
 .poster-img {
@@ -57,23 +60,30 @@
   max-height: 90vh;
   object-fit: contain;
   display: block;
+  transition: filter 0.3s ease; /* Smooth brightness transition */
 }
 
 .poster-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #000814, #001f33);
-  transition: clip-path 0.1s linear, opacity 0.1s linear;
+  background: linear-gradient(to right, #000814 0%, #001f33 50%, #000814 100%);
+  transition: clip-path 0.2s ease, opacity 0.2s ease; /* Smoother transitions */
 }
 
 .progress-glow {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 2px;
-  background: #FD6821;
-  box-shadow: 0 0 20px #FD6821, 0 0 40px #FD6821;
-  transition: left 0.1s linear;
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, #FD6821, transparent);
+  box-shadow: 0 0 20px #FD6821, 0 0 40px #FD6821, 0 0 60px #FD6821;
+  transition: left 0.2s ease;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
 }
 
 .poster-text {
@@ -85,16 +95,28 @@
   justify-content: center;
   color: #fff;
   text-shadow: 0 0 8px rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
 }
 
 .poster-amount {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #FD6821;
+  text-shadow: 0 0 10px #FD6821;
+  margin-bottom: 0.5rem;
 }
 
 .poster-revealing {
   font-size: 1rem;
   font-weight: 600;
+  color: #8ecae6;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
 }
 
 .progress-section {
@@ -104,6 +126,7 @@
 .progress-label {
   color: #8ecae6;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .progress-bar {
@@ -112,12 +135,30 @@
   height: 1.5rem;
   border-radius: 0.75rem;
   overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .progress-fill {
   height: 100%;
   background: linear-gradient(to right, #FD6821, #FFA552);
-  transition: width 0.1s linear;
+  transition: width 0.2s ease; /* Smoother progress fill */
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3));
+  animation: progressShine 2s ease-in-out infinite;
+}
+
+@keyframes progressShine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .progress-indicator {
@@ -126,7 +167,8 @@
   width: 2px;
   height: 100%;
   background: rgba(255,255,255,0.8);
-  transition: left 0.1s linear;
+  transition: left 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .progress-marks {
@@ -148,36 +190,70 @@
   border-radius: 9999px;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+  font-family: Space, sans-serif;
 }
 
 .btn-reveal {
   background: linear-gradient(to right, #FD6821, #FFA552);
   color: #fff;
+  box-shadow: 0 4px 15px rgba(253, 104, 33, 0.3);
 }
 
 .btn-reset {
   background: transparent;
   border: 2px solid #FD6821;
   color: #FD6821;
+  box-shadow: 0 4px 15px rgba(253, 104, 33, 0.2);
 }
 
-.btn-reveal:hover,
+.btn-reveal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(253, 104, 33, 0.4);
+}
+
 .btn-reset:hover {
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  background: rgba(253, 104, 33, 0.1);
+  box-shadow: 0 6px 20px rgba(253, 104, 33, 0.3);
+}
+
+.btn-reveal:active,
+.btn-reset:active {
+  transform: translateY(0);
+}
+
+.in-progress {
+  color: #8ecae6;
+  font-weight: 600;
 }
 
 @media (max-width: 640px) {
   .reveal-header {
     font-size: 2rem;
   }
+  
   .reveal-subhead {
     font-size: 1rem;
   }
+  
   .poster-img {
     max-height: 60vh;
   }
+  
   .poster-amount {
     font-size: 2rem;
+  }
+  
+  .prize-card {
+    padding: 1rem;
+  }
+  
+  .btn-reveal,
+  .btn-reset {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

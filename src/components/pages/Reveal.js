@@ -16,7 +16,7 @@ const ProgressBarReveal = () => {
     
     const interval = setInterval(() => {
       setProgress(prev => {
-        const newProgress = prev + 2;
+        const newProgress = prev + 1; // Slower increment (was 2, now 1)
         setPrizeAmount(Math.floor((newProgress / 100) * 50000));
         if (newProgress >= 100) {
           clearInterval(interval);
@@ -27,7 +27,7 @@ const ProgressBarReveal = () => {
         }
         return newProgress;
       });
-    }, 50);
+    }, 80); // Slower interval (was 50ms, now 80ms)
   };
 
   const resetReveal = () => {
@@ -38,13 +38,17 @@ const ProgressBarReveal = () => {
     setPrizeAmount(0);
   };
 
-  
+  // Calculate reveal brightness - much slower curve
+  const getRevealBrightness = () => {
+    if (progress === 0) return 0.01;
+    // Exponential curve that starts very slow and accelerates at the end
+    const normalizedProgress = progress / 100;
+    const slowCurve = Math.pow(normalizedProgress, 3); // Cubic curve for very slow start
+    return 0.01 + (slowCurve * 0.99); // From 0.01 to 1.0
+  };
 
   return (
     <div className="reveal-wrapper">
-      {/* Celebration Particles */}
-      
-
       <div className="reveal-container">
         <h1 className="reveal-header">CASH PRIZE</h1>
         <p className="reveal-subhead">
@@ -57,13 +61,13 @@ const ProgressBarReveal = () => {
               src="https://res.cloudinary.com/detarpq3q/image/upload/v1752816288/CASH_PRIZE_ogqoac.svg"
               alt="Cash Prize Poster"
               className="poster-img"
-              style={{ filter: `brightness(${0.01 + (progress/100)*0.8})` }}
+              style={{ filter: `brightness(${getRevealBrightness()})` }}
             />
             <div
               className="poster-overlay"
               style={{
                 clipPath: `inset(0 ${100 - progress}% 0 0)`,
-                opacity: progress < 100 ? 0.8 : 0
+                opacity: progress < 100 ? 0.9 : 0 // Stronger overlay
               }}
             />
             {progress > 0 && (
@@ -72,7 +76,7 @@ const ProgressBarReveal = () => {
                 style={{ left: `${progress}%` }}
               />
             )}
-            {progress < 100 && (
+            {progress < 100 && progress > 0 && (
               <div className="poster-text">
                 <div className="poster-amount">₹{prizeAmount.toLocaleString()}</div>
                 <div className="poster-revealing">REVEALING...</div>
@@ -111,8 +115,6 @@ const ProgressBarReveal = () => {
               </div>
             )}
           </div>
-
-          
         </div>
       </div>
     </div>
