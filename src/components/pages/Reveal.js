@@ -17,7 +17,7 @@ const ProgressBarReveal = () => {
     const interval = setInterval(() => {
       setProgress(prev => {
         const newProgress = prev + 1; // Slower increment (was 2, now 1)
-        setPrizeAmount(Math.floor((newProgress / 100) * 50000));
+        setPrizeAmount(Math.floor((newProgress / 100) * 200000));
         if (newProgress >= 100) {
           clearInterval(interval);
           setIsRevealed(true);

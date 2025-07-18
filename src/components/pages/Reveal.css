@@ -39,7 +39,9 @@
 
 .prize-card {
   position: relative;
-  background: rgba(0, 31, 51, 0.4);
+ /* background: rgba(0, 31, 51, 0.4);*/
+   background-color:rgba(0, 63, 102, 0.2);
+
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 0 20px rgba(253,104,33,0.3);
