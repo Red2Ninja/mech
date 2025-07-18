@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from '../HeroSection'
-
+import Reveal from './Reveal'
 
 import AboutSection from './About'
 import Cards from './Cards'
@@ -18,6 +18,7 @@ function Home() {
         <HeroSection />
         <AboutSection />
         <Cards />
+        <Reveal />
         <RegisterQuest />
         <GallerySection />
         <TeamSection />

@@ -20,6 +20,7 @@ function HeroSection() {
           onCanPlay={() => setVideoLoaded(true)}
           className={`hero-video ${videoLoaded ? '' : 'hidden'}`}
         />
+        
       </div>
     </section>
   );

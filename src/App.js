@@ -17,6 +17,7 @@ import Mechathon from './components/pages/Events/Mechathon';
 import Contact from './components/Contact';
 
 function App() {
+  
   return (
     <div className = "App">
       <SpaceThemedPage/>
