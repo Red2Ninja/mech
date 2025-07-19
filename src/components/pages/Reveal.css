@@ -59,7 +59,7 @@
 .poster-img {
   width: 100%;
   height: auto;
-  max-height: 90vh;
+  max-height: 80vh;
   object-fit: contain;
   display: block;
   transition: filter 0.3s ease; /* Smooth brightness transition */

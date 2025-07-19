@@ -15,9 +15,9 @@ const competitionData = {
   },
   'MarinaX': {
     image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235174/Marinax_poster_hyfdrg.jpg',
-    pdf: 'https://drive.google.com/file/d/1wHn-m-uyC-HS_h6ZGFGfkT39ynsfVARe/view?usp=sharing',
+    pdf: 'https://drive.google.com/file/d/1tt-AYVIxC-K0BkwZCikYHifLCqpx6ZaW/view?usp=sharing',
     details: [
-      'An Autonomous Underwater Vehicle (AUV) competition designed to challenge teams in mission-based tasks such as precise navigation, object detection, and retrieval. Over the course of two days, participants will demonstrate their technical expertise and innovative approaches in underwater robotics. This event provides a platform for practical application of engineering principles, encouraging creativity and problem-solving in a competitive yet collaborative environment. Teams will be evaluated on performance, efficiency, and design excellence throughout the competition.',
+      'Description for marina :- A Remotely Operated Vehicle (ROV) Competition, conducted over two days at Mechnovate 2025, invites student teams to showcase their capabilities in underwater robotics through a series of mission-based challenges. These tasks test teams on key aspects such as precise navigation, target detection, and object manipulation within a dynamic aquatic environment. The competition emphasizes both technical competence and innovation, encouraging practical application of engineering principles under real-world constraints. Teams will be evaluated across multiple metrics, including design effectiveness, task execution, and overall system efficiency, fostering a spirit of creativity, professionalism, and collaborative problem-solving.',
       'Team Size: 5-12 members',
     ],
     

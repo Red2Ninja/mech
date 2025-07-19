@@ -22,7 +22,7 @@ function AboutSection() {
           <div className='card-content-section'>
             <h2 className='card-title'>WHAT IS MECHNOVATE?</h2>
             <p className='card-content'>
-              Mechnovate is the largest and widely recognized 3 day symposium conducted by ASME-VIT. It focuses on innovation and advancements in the field of mechanical engineering. It has successfully gathered inquisitive and talented minds from all over India. Our motto is to attain insights from our predecessors on the conduction of events and reinventing ourselves while implementing future technology in Mechnovate 2024. It includes workshops, keynote sessions and competitions to foster collaboration and exchange of ideas among students, researchers, and professionals in the domain of mechanical engineering. Mechnovate takes place over the course of 3 days packed with premium events.
+              Mechnovate is the largest and widely recognized 3 day symposium conducted by ASME-VIT. It focuses on innovation and advancements in the field of mechanical engineering. It has successfully gathered inquisitive and talented minds from all over India. Our motto is to attain insights from our predecessors on the conduction of events and reinventing ourselves while implementing future technology in Mechnovate 2025. It includes workshops, keynote sessions and competitions to foster collaboration and exchange of ideas among students, researchers, and professionals in the domain of mechanical engineering. Mechnovate takes place over the course of 3 days packed with premium events.
             </p>
           </div>
         </div>
