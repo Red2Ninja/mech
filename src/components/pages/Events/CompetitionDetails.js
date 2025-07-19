@@ -26,7 +26,7 @@ const competitionData = {
   },
   'Mechnovate Drone Racing Challenge (MDRC)': {
     image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235190/mdrc_klb0rw.jpg',
-    pdf: 'https://drive.google.com/file/d/1r5wtmXcxuur-MaHNb89s_ElhZEU-t0xB/view?usp=drive_link',
+    pdf: 'https://drive.google.com/drive/folders/1QzcKXJNl9zO5Db44unmiw82sq1NOeTVx',
     details: [
       'The Mechnovate Drone Racing Challenge, a two-day competition invites collegiate teams to showcase their self-built drones in a multi-stage contest. Participants will undergo technical inspection, deliver presentations, and compete in dynamic racing rounds featuring challenging obstacle courses. Judged on design, innovation, and piloting skills, MDRC aims to foster creativity, teamwork, and engineering excellence within the drone racing community.',
       'Team Size: 3-12 members',
