@@ -6,7 +6,7 @@ function Location() {
     <div className="location-container">
       <div className="location-text">
         
-        <h2 className='stalinist-one-regular'>How to reach <span>VIT?</span></h2>
+        <h2 className='stalinist-one-regular'>How to reach VIT?</h2>
         <div className="location-map">
         <iframe
           title="VIT Location Map"
