@@ -8,3 +8,28 @@ body {
     
 
 }
+
+/* Mobile black background override */
+@media (max-width: 768px) {
+  body {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+  
+  /* Optional: Hide the space background canvas on mobile */
+  canvas {
+    display: none !important;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  body {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+  
+  canvas {
+    display: none !important;
+  }
+}
