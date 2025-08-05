@@ -130,17 +130,36 @@ ul{
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .location-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
   }
 
+  .location-text,
   .location-map {
-    grid-column: 1 / -1;
-    margin-top: clamp(1rem, 3vw, 2rem);
+    width: 100%;
+    grid-column: auto;
   }
 
-  .location-text {
-    grid-column: 1 / -1;
+  .location-map iframe {
+    height: 250px;
+  }
+
+  .header {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .subheader {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .location-text p,
+  .location-text ul {
+    text-align: left;
   }
 }
