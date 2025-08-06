@@ -70,7 +70,7 @@ function RegisterQuest() {
 
   function getTimeRemaining() {
 // Target: 7th August 2025, 8:00 AM IST
-    const eventDate = new Date("2025-08-07T02:30:00Z");
+    const eventDate = new Date("2025-08-07T04:30:00Z");
     const now = new Date();
     const diff = eventDate - now;
 
