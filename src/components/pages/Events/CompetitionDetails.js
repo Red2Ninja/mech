@@ -4,7 +4,7 @@ import './CompetitionDetails.css';
 
 const competitionData = {
   'Aerodash 2.0': {
-    image: '', 
+    image: '/images/event/marinaX.jpg', 
     pdf: 'https://drive.google.com/file/d/1ETnkXdR7cq1cHzeqEysA_ZGf_iZZ3KpU/view?usp=drive_link', 
     details: [
       'AeroDash 2.0 is a national-level aeromodelling competition that challenges teams to design, present, and fly innovative aircraft in Regular and Micro classes. Spanning three days, the event features technical presentations, rigorous inspections, and competitive flight rounds, culminating in a grand awards ceremony. With expert pilots, industry-level judging, and a focus on engineering excellence, AeroDash 2.0 offers participants a platform to showcase aeronautical ingenuity and teamwork in a dynamic, real-world competitive environment.',
@@ -14,10 +14,10 @@ const competitionData = {
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'MarinaX': {
-    image: '../images/event/marinaX.jpg',
+    image: '/images/event/marinaX.jpg',
     pdf: 'https://drive.google.com/file/d/1tt-AYVIxC-K0BkwZCikYHifLCqpx6ZaW/view?usp=sharing',
     details: [
-      'Description for marina :- A Remotely Operated Vehicle (ROV) Competition, conducted over two days at Mechnovate 2025, invites student teams to showcase their capabilities in underwater robotics through a series of mission-based challenges. These tasks test teams on key aspects such as precise navigation, target detection, and object manipulation within a dynamic aquatic environment. The competition emphasizes both technical competence and innovation, encouraging practical application of engineering principles under real-world constraints. Teams will be evaluated across multiple metrics, including design effectiveness, task execution, and overall system efficiency, fostering a spirit of creativity, professionalism, and collaborative problem-solving.',
+      'A Remotely Operated Vehicle (ROV) Competition, conducted over two days at Mechnovate 2025, invites student teams to showcase their capabilities in underwater robotics through a series of mission-based challenges. These tasks test teams on key aspects such as precise navigation, target detection, and object manipulation within a dynamic aquatic environment. The competition emphasizes both technical competence and innovation, encouraging practical application of engineering principles under real-world constraints. Teams will be evaluated across multiple metrics, including design effectiveness, task execution, and overall system efficiency, fostering a spirit of creativity, professionalism, and collaborative problem-solving.',
       'Team Size: 5-12 members',
     ],
     
@@ -25,7 +25,7 @@ const competitionData = {
     payment: 'https://events.vit.ac.in/events/ASME',
   },
   'Mechnovate Drone Racing Challenge (MDRC)': {
-    image: '../images/event_logos/mdrc_2.png',
+    image: '/images/event_logos/mdrc_2.png',
     pdf: 'https://drive.google.com/file/d/1LGtwZXzlzjb7UO3-6kqu0ntUJKgQX9Jq/view?usp=drive_link',
     details: [
       'The Mechnovate Drone Racing Challenge, a two-day competition invites collegiate teams to showcase their self-built drones in a multi-stage contest. Participants will undergo technical inspection, deliver presentations, and compete in dynamic racing rounds featuring challenging obstacle courses. Judged on design, innovation, and piloting skills, MDRC aims to foster creativity, teamwork, and engineering excellence within the drone racing community.',
