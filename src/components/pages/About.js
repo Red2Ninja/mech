@@ -14,7 +14,7 @@ function AboutSection() {
         <div className='orange-card'>
           <div className='card-mascot'>
             <img 
-              src="https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752238901/Mascot_sbfexz.png"
+              src="./images/Mascot.png"
               alt="Mechnovate Mascot" 
               className='mascot-icon'
             />
@@ -31,7 +31,7 @@ function AboutSection() {
         <div className='orange-card reverse'>
           <div className='card-mascot'>
             <img 
-              src= "https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752238901/Mascot_sbfexz.png"
+              src= "./images/Mascot.png"
               alt="ASME-VIT Mascot" 
               className='mascot-icon'
             />

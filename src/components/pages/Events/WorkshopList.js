@@ -7,12 +7,12 @@ const workshops = [
   {
     id: 'Orbitron_A_cansat_Workshop',
     title: 'Orbitron-A cansat Workshop',
-    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235533/orbitron_2_tkca0w.png'
+    image: '../images/event_logos/orbitron_2.png'
   },
   {
     id: 'HoverX',
     title: 'HoverX',
-    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752235520/hoverX_3_z7kpyg.png'
+    image: '../images/event_logos/hoverX_1.png'
   },
 ];
 

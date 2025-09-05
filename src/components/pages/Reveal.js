@@ -58,7 +58,7 @@ const ProgressBarReveal = () => {
         <div className="prize-card">
           <div className="poster-wrapper">
             <img
-              src="https://res.cloudinary.com/detarpq3q/image/upload/v1752816288/CASH_PRIZE_ogqoac.svg"
+              src="./images/CASH PRIZE.svg"
               alt="Cash Prize Poster"
               className="poster-img"
               style={{ filter: `brightness(${getRevealBrightness()})` }}

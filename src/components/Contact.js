@@ -4,13 +4,13 @@ import './Contact.css';
 const coordinators = [
   {
     name: 'Juee Patil',
-    image: 'https://res.cloudinary.com/detarpq3q/image/upload/v1752309518/Screenshot_2025-07-12_140623_locgud.png',
+    image: './images/team/Zuiii.jpg',
     phone: '+91 9702180838',
     email: 'jueepatil0905@gmail.com'
   },
   {
     name: 'Vishal Singh',
-    image: 'https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752237437/vishal_gxtblg.png',
+    image: './images/team/vishal.png',
     phone: '+91 6393901409',
     email: 'Vishal.singh2022a@gmail.com'
   }

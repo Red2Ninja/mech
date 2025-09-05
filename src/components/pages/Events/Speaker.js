@@ -17,7 +17,7 @@ const SpeakerSession = () => {
 
         {/* Image Card */}
         <div className="session-card session-image">
-          <img src="https://res.cloudinary.com/detarpq3q/image/upload/f_webp/v1752254970/sapentia_cxpdaf.jpg" alt="Speaker Session" />
+          <img src="../images/event/sapentia.jpg" alt="Speaker Session" />
         </div>
       </div>
     </section>
